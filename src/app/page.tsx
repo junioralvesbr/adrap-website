@@ -8,7 +8,7 @@ export default function Home() {
       <Image
         src={AdrapLogo}
         alt="Logo da Adrap"
-        objectFit="fill"
+        className="object-fill"
       />
       <h1 className="text-3xl">Site em construção</h1>
     </div>
