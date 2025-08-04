@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import AdrapLogo from '@/assets/adrap-logo.jpg'
+import AdrapLogo from "@/assets/adrap-logo.jpg";
 
 export default function Home() {
   return (
-    <div className=" h-screen w-screen flex flex-col justify-center items-center bg-[#e7e9ed]">
+    <div className="flex h-screen w-screen flex-col items-center justify-center bg-[#e7e9ed]">
       <Image
         src={AdrapLogo}
         alt="Logo da Adrap"
