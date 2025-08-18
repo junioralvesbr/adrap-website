@@ -1,4 +1,3 @@
-import './footer.css';
 // import { Logo } from '@app/components/Logo/Logo';
 
 const Footer = () => (

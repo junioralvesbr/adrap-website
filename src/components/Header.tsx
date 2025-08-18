@@ -1,5 +1,5 @@
 import { NavBar } from '@/components/NavBar/NavBar';
-import { Logo } from '@app/components/Logo/Logo';
+// import { Logo } from '@app/components/Logo/Logo';
 import Link from 'next/link';
 
 const Header = () => (
