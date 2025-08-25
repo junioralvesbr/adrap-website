@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-const LoginAvatar = (props: SVGProps<any>) => (
+const LoginAvatar = (props: SVGProps<SVGSVGElement>) => (
   <svg
     data-bbox="0 0 50 50"
     data-type="shape"
