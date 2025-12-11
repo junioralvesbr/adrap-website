@@ -59,3 +59,7 @@ body {
   width: 14px !important;
   height: 14px !important;
 }
+
+.overlay-blur-branco {
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+}

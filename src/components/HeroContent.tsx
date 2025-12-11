@@ -10,15 +10,14 @@ type Props = {
 const HeroContent = ({ title, description, image }: Props) => {
   return (
     <div className="overflow-hidden h-[80dvh]">
-      <div className="relative w-full h-full bg-primary-500">
+      <div className="w-full h-full bg-primary-500">
 
         <Image
           src={image}
           alt="Pessoas voluntariando"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-60"
+          fill
           priority
+          className='object-cover'
         />
 
         <div className="container mx-auto px-4 py-16 flex items-center h-full">
@@ -39,12 +38,6 @@ const HeroContent = ({ title, description, image }: Props) => {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg className="relative block w-full h-20 md:h-24" xmlns="www.w3.org" viewBox="0 0 1440 320">
-            <path fill="#f9fafb" fillOpacity="1" d="M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,117.3C672,117,768,171,864,186.7C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
         </div>
       </div>
     </div>

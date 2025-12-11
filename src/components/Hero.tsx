@@ -34,8 +34,8 @@ export default function Hero() {
       spaceBetween={0}
       effect={'default'}
       loop={true}
-      autoplay={{ delay: 7000 }}
-      speed={2000}
+      autoplay={{ delay: 5000 }}
+      speed={1000}
       pagination={{
         clickable: true,
         bulletClass: 'swiper-pagination-bullet',
