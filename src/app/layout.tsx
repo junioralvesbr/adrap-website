@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Merriweather, Poppins } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,10 @@ export default function RootLayout({
       <body
         className={`${merriweather.variable} ${poppins.variable} antialiased`}
       >
-        {children}
+        <div className="bg-white">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

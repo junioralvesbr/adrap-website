@@ -8,7 +8,7 @@ export default function AboutUs() {
     <section className="flex justify-center mt-20">
       <div className="flex justify-center items-center gap-32 flex-wrap">
         <div className="max-w-xl">
-          <h2 className="text-6xl font-bold font-merriweather text-secondary-500">
+          <h2 className="text-6xl font-bold font-merriweather text-second">
             Quem somo nós?
             <span>
               <Image
@@ -20,10 +20,10 @@ export default function AboutUs() {
               />
             </span>
           </h2>
-          <p className="text-secondary-500 font-poppins leading-8 mt-8">
+          <p className="text-second font-poppins leading-8 mt-8">
             Somos uma organização sem fins lucrativos comprometida em capacitar crianças por meio do acesso à cultura de qualidade, através da musica, pintura, arte e dança.
           </p>
-          <p className="text-secondary-500 font-poppins leading-8 mt-4">
+          <p className="text-second font-poppins leading-8 mt-4">
             Desde 2018, ajudamos crinaças no desenvolvimento de suas habilidades e capacidades sociais.
           </p>
         </div>

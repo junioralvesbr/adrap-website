@@ -3,8 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-primary-500: oklch(0.7878 0.1453 121.68);
-  --color-secondary-500: oklch(0.36 0 0);
+  --color-lemongreen-500: oklch(0.7878 0.1453 121.68);
+  --color-darkBlack-500: oklch(0.36 0 0);
+  --color-darkYellow-500: oklch(68.5% 0.145 95);
 }
 
 @theme inline {
@@ -12,16 +13,9 @@
   --color-foreground: var(--foreground);
   --font-merriweather: var(--font-merriweather);
   --font-poppins: var(--font-poppins);
-  --text-color: var(--color-secondary-500);
-  --color-primary-500: var(--color-primary-500);
-  --color-secondary-500: var(--color-secondary-500);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-first: var(--color-lemongreen-500);
+  --color-second: var(--color-darkBlack-500);
+  --color-third: var(--color-darkYellow-500);
 }
 
 @keyframes fadeInSlide {

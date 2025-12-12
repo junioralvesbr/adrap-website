@@ -10,7 +10,7 @@ type Props = {
 const HeroContent = ({ title, description, image }: Props) => {
   return (
     <div className="overflow-hidden h-[80dvh]">
-      <div className="w-full h-full bg-primary-500">
+      <div className="w-full h-full bg-first">
 
         <Image
           src={image}
@@ -30,10 +30,10 @@ const HeroContent = ({ title, description, image }: Props) => {
               {title}
             </h1>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <a href="#" className="bg-white text-[#3C5735] font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInSlide delay-400 text-center">
+              <a href="#" className="bg-white text-second font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInSlide delay-400 text-center">
                 Donate now
               </a>
-              <a href="#" className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-[#3C5735] transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInSlide delay-600 text-center">
+              <a href="#" className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-white hover:text-second transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInSlide delay-600 text-center">
                 Become a Volunteer
               </a>
             </div>
