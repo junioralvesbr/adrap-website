@@ -5,7 +5,7 @@ import faixaVerde from "@/assets/faixa-verde.png";
 
 export default function AboutUs() {
   return (
-    <section className="flex justify-center mt-20">
+    <section className="flex justify-center mt-20 px-4 sm:px-0">
       <div className="flex justify-center items-center gap-32 flex-wrap">
         <div className="max-w-xl">
           <h2 className="text-6xl font-bold font-merriweather text-second">
@@ -20,13 +20,16 @@ export default function AboutUs() {
               />
             </span>
           </h2>
+
           <p className="text-second font-poppins leading-8 mt-8">
             Somos uma organização sem fins lucrativos comprometida em capacitar crianças por meio do acesso à cultura de qualidade, através da musica, pintura, arte e dança.
           </p>
+
           <p className="text-second font-poppins leading-8 mt-4">
             Desde 2018, ajudamos crinaças no desenvolvimento de suas habilidades e capacidades sociais.
           </p>
         </div>
+
         <div className="relative overflow-hidden">
           <Image
             src={aboutImage}
@@ -34,7 +37,8 @@ export default function AboutUs() {
             width={500}
             height={500}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-28 overlay-blur-branco" />
+
+          <div className="absolute bottom-0 left-0 right-0 h-28 overlay-blur-branco" id="overlay-white" />
         </div>
       </div>
     </section>

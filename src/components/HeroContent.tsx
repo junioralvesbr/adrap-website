@@ -22,7 +22,6 @@ const HeroContent = ({ title, description, image }: Props) => {
 
         <div className="container mx-auto px-4 py-16 flex items-center h-full">
           <div className="text-white max-w-2xl">
-            {/* Estas classes funcionam no Tailwind 4 */}
             <p className="text-4xl font-merriweather font-medium mb-4 animate-fadeInSlide">
               {description}
             </p>
