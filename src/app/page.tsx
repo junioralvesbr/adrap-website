@@ -1,4 +1,5 @@
 import AboutUs from "@/components/About";
+import GetInvolved from "@/components/GetInvolved";
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 
       <main>
         <AboutUs />
+        <GetInvolved />
       </main>
     </>
   );
