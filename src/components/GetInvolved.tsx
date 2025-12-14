@@ -10,19 +10,19 @@ const data = [
   {
     id: 1,
     title: "Doações",
-    description: "With your support, we can provide school supplies, build learning centers, train teachers, and open doors for underprivileged children. Even a small contribution can make a big difference.",
+    description: "Com o seu apoio, podemos fornecer material de apoio, manter o centro de aprendizagem, capacitar professores e abrir portas para crianças carentes. Mesmo uma pequena contribuição pode fazer uma grande diferença.",
     image: donateImage,
   },
   {
     id: 2,
     title: "Campanhas",
-    description: "Fundraising is one of the most powerful ways to support our mission. Whether it’s your birthday, a personal challenge, or a community event — you can rally your friends, family, or followers to bring hope and education to children in need.",
+    description: "A arrecadação de fundos é uma das maneiras mais eficazes de apoiar nossa missão. Realizamos eventos, bazares, campanhas de arrecadação de e muito mais. Fique ligado nas nossas redes sociais para saber mais.",
     image: campaignImage,
   },
   {
     id: 3,
     title: "Voluntários",
-    description: "Volunteering is more than giving your time — it’s giving your heart. Whether you’re helping a child read, packing school kits, or assisting with events, your effort fuels real, lasting change.",
+    description: "O voluntariado é mais do que doar seu tempo, é doar seu coração. Seja atendendo nossas crianças, ensinando-as, preparando os lanches e auxiliando no dia dia e nos nossos eventos, seu esforço gera mudanças reais e duradouras.",
     image: volunteerImage,
   },
 
