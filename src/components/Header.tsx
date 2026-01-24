@@ -1,8 +1,12 @@
+import { Button } from '@/components/ui/button'
+import { ArrowRight, Play } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   return (
-    <section className='relative min-h-screen'>
+    <section className='relative flex min-h-screen items-center overflow-hidden pt-20'>
+      {/* Imagem de background */}
       <div className='absolute inset-0 z-0'>
         <Image
           src='/images/hero.jpg'
@@ -15,6 +19,7 @@ export default function Header() {
         <div className='from-foreground/90 via-foreground/70 to-foreground/40 absolute inset-0 bg-linear-to-r' />
       </div>
 
+      {/* Textos */}
       <div className='relative z-10 container mx-auto px-4'>
         <div className='max-w-3xl'>
           <div className='bg-primary/20 text-primary-foreground mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 backdrop-blur-sm'>
@@ -35,6 +40,31 @@ export default function Header() {
             e esperança para quem mais precisa.{' '}
           </p>
 
+          <div className='flex flex-col gap-4 sm:flex-row'>
+            <Button
+              size='lg'
+              asChild
+              className='bg-primary hover:bg-primary/90 text-primary-foreground h-12 rounded-full px-8 text-base font-semibold'
+            >
+              <Link href='#doar'>
+                Doe Agora
+                <ArrowRight className='ml-2 h-5 w-5' />
+              </Link>
+            </Button>
+
+            <Button
+              size='lg'
+              asChild
+              variant='outline'
+              className='border-card/30 text-card hover:bg-card/10 hover:text-accent h-12 rounded-full bg-transparent px-8 text-base font-semibold'
+            >
+              <Link href='#voluntários'>
+                <Play className='mr-2 h-5 w-5' />
+                Seja um Voluntário
+              </Link>
+            </Button>
+          </div>
+
           <div className='border-card/20 mt-12 flex items-center gap-8 border-t pt-8'>
             <div>
               <p className='text-accent text-3xl font-bold'>120+</p>
@@ -51,6 +81,9 @@ export default function Header() {
           </div>
         </div>
       </div>
+
+      {/* Efeito degrade branco no bottom da página */}
+      <div className='from-background absolute right-0 bottom-0 left-0 h-32 bg-linear-to-t to-transparent' />
     </section>
   )
 }
