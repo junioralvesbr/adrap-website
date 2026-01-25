@@ -10,7 +10,7 @@ const features = [
   'Apoio educacional e desenvolvimento pessoal',
 ]
 
-export function About() {
+export default function About() {
   return (
     <section id='sobre' className='bg-background py-24'>
       <div className='container mx-auto px-4'>
