@@ -1,5 +1,5 @@
 import About from '@/components/About'
-import Atividades from '@/components/Atividades'
+import Activities from '@/components/Activities'
 import GetInvolved from '@/components/Get-Involved'
 import Header from '@/components/Header'
 import Mission from '@/components/Mission'
@@ -16,7 +16,7 @@ export default function Home() {
         <About />
         <GetInvolved />
         <Mission />
-        <Atividades />
+        <Activities />
         <SocialImpact />
       </main>
     </>

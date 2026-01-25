@@ -30,7 +30,7 @@ const programs = [
   },
 ]
 
-export default function Atividades() {
+export default function Activities() {
   return (
     <section id='atividades' className='bg-background py-24'>
       <div className='container mx-auto px-4'>
