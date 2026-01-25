@@ -8,19 +8,40 @@ const volunteers = [
     image: '/images/voluntarios/voluntario-1.jpg',
   },
   {
-    name: 'Carlos Silva',
+    name: 'Carlos Kawaisa',
     role: 'Coordenador de Música',
     image: '/images/voluntarios/voluntario-2.jpg',
   },
   {
-    name: 'Ana Paula',
+    name: 'Lucimar',
     role: 'Professora de Arte',
     image: '/images/voluntarios/voluntario-3.jpg',
   },
   {
-    name: 'João Santos',
+    name: 'Marlene',
     role: 'Voluntário',
     image: '/images/voluntarios/voluntario-4.jpg',
+  },
+  {
+    name: 'Marta',
+    role: 'Voluntário',
+    image: '/images/voluntarios/voluntario-5.jpg',
+  },
+  {
+    name: 'Inês',
+    role: 'Voluntário',
+    image: '/images/voluntarios/voluntario-6.jpg',
+    position: 'object-center',
+  },
+  {
+    name: 'Lucélia',
+    role: 'Voluntário',
+    image: '/images/voluntarios/voluntario-7.jpg',
+  },
+  {
+    name: 'Rian',
+    role: 'Voluntário',
+    image: '/images/voluntarios/voluntario-8.jpg',
   },
 ]
 
@@ -52,7 +73,8 @@ export default function Volunteers() {
                   src={volunteer.image || '/placeholder.svg'}
                   alt={volunteer.name}
                   fill
-                  className='object-cover transition-transform duration-500 group-hover:scale-110'
+                  className='object-cover object-top transition-transform duration-500 group-hover:scale-110'
+                  sizes='(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw'
                 />
                 <div className='from-foreground/80 absolute inset-0 bg-linear-to-t via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
                 <div className='absolute right-0 bottom-4 left-0 flex justify-center gap-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
