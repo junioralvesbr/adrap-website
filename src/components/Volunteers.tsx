@@ -18,7 +18,7 @@ const volunteers = [
     image: '/images/voluntarios/voluntario-3.jpg',
   },
   {
-    name: 'Marlene',
+    name: 'Lucélia',
     role: 'Voluntário',
     image: '/images/voluntarios/voluntario-4.jpg',
   },
@@ -34,7 +34,7 @@ const volunteers = [
     position: 'object-center',
   },
   {
-    name: 'Lucélia',
+    name: 'Marlene',
     role: 'Voluntário',
     image: '/images/voluntarios/voluntario-7.jpg',
   },
