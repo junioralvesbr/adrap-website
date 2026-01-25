@@ -114,17 +114,23 @@ export default function Footer() {
             <ul className='space-y-4'>
               <li className='flex items-start gap-3'>
                 <MapPin className='text-primary mt-1 h-5 w-5 shrink-0' />
-                <span className='text-card/70'>
-                  Maringá, Paraná
-                  <br />
-                  Brasil
-                </span>
+                <a
+                  href='https://maps.app.goo.gl/drCtFvGacTBqs2iD8'
+                  target='_blank'
+                >
+                  <span className='text-card/70 hover:text-primary transition-colors'>
+                    Sarandi, Paraná
+                    <br />
+                    Brasil
+                  </span>
+                </a>
               </li>
               <li className='flex items-center gap-3'>
                 <Phone className='text-primary h-5 w-5 shrink-0' />
                 <a
                   href='tel:+5544999999999'
                   className='text-card/70 hover:text-primary transition-colors'
+                  target='_blank'
                 >
                   (44) 99999-9999
                 </a>
@@ -134,6 +140,7 @@ export default function Footer() {
                 <a
                   href='mailto:contato@adrap.ong.br'
                   className='text-card/70 hover:text-primary transition-colors'
+                  target='_blank'
                 >
                   contato@adrap.ong.br
                 </a>
