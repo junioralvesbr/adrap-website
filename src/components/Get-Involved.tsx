@@ -17,7 +17,7 @@ const involvementOptions = [
     description:
       'A arrecadação de fundos é uma das maneiras mais eficazes de apoiar nossa missão. Realizamos eventos, bazares, campanhas de arrecadação e muito mais. Fique ligado nas nossas redes sociais.',
     color: 'bg-accent',
-    href: '#campanhas',
+    href: '#eventos',
   },
   {
     icon: Users,
@@ -25,7 +25,7 @@ const involvementOptions = [
     description:
       'O voluntariado é mais do que doar seu tempo, é doar seu coração. Seja atendendo nossas crianças, ensinando-as, preparando os lanches ou auxiliando nos nossos eventos.',
     color: 'bg-chart-3',
-    href: '#voluntario',
+    href: '#voluntarios',
   },
 ]
 

@@ -23,9 +23,7 @@ export default function RootLayout({
     <html lang='pt-BR'>
       <body className={`${_poppins.variable} font-sans antialiased`}>
         {children}
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </body>
     </html>
   )

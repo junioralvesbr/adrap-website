@@ -5,7 +5,10 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <section className='relative flex min-h-screen items-center overflow-hidden pt-20'>
+    <section
+      id='inicio'
+      className='relative flex min-h-screen items-center overflow-hidden pt-20'
+    >
       {/* Imagem de background */}
       <div className='absolute inset-0 z-0'>
         <Image
