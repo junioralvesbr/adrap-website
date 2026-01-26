@@ -68,7 +68,7 @@ export default function Header() {
             </Button>
           </div>
 
-          <div className='border-card/20 mt-12 flex items-center gap-8 border-t pt-8'>
+          <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0'>
             <div>
               <p className='text-accent text-3xl font-bold'>120+</p>
               <p className='text-card/70 text-sm'>Crianças atendidas</p>
