@@ -70,15 +70,15 @@ export default function Header() {
           </div>
 
           <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0'>
-            <div>
+            <div className='flex-1 sm:flex-0'>
               <p className='text-accent text-3xl font-bold'>120+</p>
               <p className='text-card/70 text-sm'>Crianças atendidas</p>
             </div>
-            <div>
+            <div className='flex-1 sm:flex-0'>
               <p className='text-accent text-3xl font-bold'>300+</p>
               <p className='text-card/70 text-sm'>Voluntários</p>
             </div>
-            <div>
+            <div className='flex-1 sm:flex-0'>
               <p className='text-accent text-3xl font-bold'>50+</p>
               <p className='text-card/70 text-sm'>Famílias impactadas</p>
             </div>
