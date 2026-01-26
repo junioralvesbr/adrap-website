@@ -1,19 +1,20 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { NAVIGATION_LINKS } from '@/config/links'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
 const navLinks = [
-  { href: '#inicio', label: 'Início' },
-  { href: '#sobre', label: 'Quem Somos' },
-  { href: '#atividades', label: 'Atividades' },
-  { href: '#impacto', label: 'Impacto' },
-  { href: '#voluntarios', label: 'Voluntários' },
-  { href: '#eventos', label: 'Eventos' },
-  { href: '#contato', label: 'Contato' },
+  { href: NAVIGATION_LINKS.INICIO, label: 'Início' },
+  { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
+  { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
+  { href: NAVIGATION_LINKS.IMPACTO, label: 'Impacto' },
+  { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
+  { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
+  { href: NAVIGATION_LINKS.CONTATO, label: 'Contato' },
 ]
 
 export default function NavBar() {
@@ -23,7 +24,10 @@ export default function NavBar() {
     <div className='border-border fixed top-0 right-0 left-0 z-50 border-b bg-white backdrop-blur-md'>
       <div className='container mx-auto px-4'>
         <div className='flex h-20 items-center justify-between'>
-          <Link href='/' className='flex items-center gap-3'>
+          <Link
+            href={NAVIGATION_LINKS.HOME}
+            className='flex items-center gap-3'
+          >
             <div className='flex items-center justify-center rounded-full'>
               <Image src='/logo.jpg' alt='Logo' width={50} height={50} />
             </div>
@@ -54,7 +58,7 @@ export default function NavBar() {
               asChild
               className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6'
             >
-              <Link href='#doar'>Doe Agora</Link>
+              <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
             </Button>
           </div>
 
@@ -84,7 +88,7 @@ export default function NavBar() {
                 asChild
                 className='bg-primary hover:bg-primary/90 text-primary-foreground mt-2 rounded-full'
               >
-                <Link href='#doar'>Doe Agora</Link>
+                <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
               </Button>
             </nav>
           </div>

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Check } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -67,7 +68,7 @@ export default function About() {
               asChild
               className='bg-primary hover:bg-primary/90 text-primary-foreground h-12 rounded-full px-8'
             >
-              <Link href='#programas'>
+              <Link href={NAVIGATION_LINKS.PROGRAMAS}>
                 Conheça nossos programas
                 <ArrowRight className='ml-2 h-5 w-5' />
               </Link>

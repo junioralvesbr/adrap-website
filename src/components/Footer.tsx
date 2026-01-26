@@ -1,4 +1,11 @@
 import {
+  CONTACT_LINKS,
+  LEGAL_LINKS,
+  NAVIGATION_LINKS,
+  PROGRAM_LINKS,
+  SOCIAL_LINKS,
+} from '@/config/links'
+import {
   Facebook,
   Heart,
   Instagram,
@@ -10,18 +17,18 @@ import {
 import Link from 'next/link'
 
 const quickLinks = [
-  { href: '#sobre', label: 'Quem Somos' },
-  { href: '#programas', label: 'Programas' },
-  { href: '#voluntarios', label: 'Voluntários' },
-  { href: '#eventos', label: 'Eventos' },
-  { href: '#doar', label: 'Doe Agora' },
+  { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
+  { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
+  { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
+  { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
+  { href: NAVIGATION_LINKS.DOAR, label: 'Doe Agora' },
 ]
 
 const programs = [
-  { href: '#', label: 'Curso de Música' },
-  { href: '#', label: 'Curso de Pintura' },
-  { href: '#', label: 'Curso de Dança' },
-  { href: '#', label: 'Apoio Educacional' },
+  { href: PROGRAM_LINKS.MUSICA, label: 'Aulas de Música' },
+  { href: PROGRAM_LINKS.PINTURA, label: 'Aulas de Pintura' },
+  { href: PROGRAM_LINKS.DANCA, label: 'Aulas de Dança' },
+  { href: PROGRAM_LINKS.APOIO_EDUCACIONAL, label: 'Apoio Educacional' },
 ]
 
 export default function Footer() {
@@ -30,7 +37,10 @@ export default function Footer() {
       <div className='container mx-auto px-4'>
         <div className='mb-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4'>
           <div>
-            <Link href='/' className='mb-6 flex items-center gap-3'>
+            <Link
+              href={NAVIGATION_LINKS.HOME}
+              className='mb-6 flex items-center gap-3'
+            >
               <div className='bg-primary flex h-12 w-12 items-center justify-center rounded-full'>
                 <Heart className='text-primary-foreground h-6 w-6' />
               </div>
@@ -49,7 +59,7 @@ export default function Footer() {
             </p>
             <div className='flex gap-4'>
               <a
-                href='https://facebook.com'
+                href={SOCIAL_LINKS.FACEBOOK}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='bg-card/10 text-card hover:bg-primary hover:text-primary-foreground flex h-10 w-10 items-center justify-center rounded-full transition-colors'
@@ -57,7 +67,7 @@ export default function Footer() {
                 <Facebook className='h-5 w-5' />
               </a>
               <a
-                href='https://instagram.com'
+                href={SOCIAL_LINKS.INSTAGRAM}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='bg-card/10 text-card hover:bg-primary hover:text-primary-foreground flex h-10 w-10 items-center justify-center rounded-full transition-colors'
@@ -65,7 +75,7 @@ export default function Footer() {
                 <Instagram className='h-5 w-5' />
               </a>
               <a
-                href='https://youtube.com'
+                href={SOCIAL_LINKS.YOUTUBE}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='bg-card/10 text-card hover:bg-primary hover:text-primary-foreground flex h-10 w-10 items-center justify-center rounded-full transition-colors'
@@ -114,10 +124,7 @@ export default function Footer() {
             <ul className='space-y-4'>
               <li className='flex items-start gap-3'>
                 <MapPin className='text-primary mt-1 h-5 w-5 shrink-0' />
-                <a
-                  href='https://maps.app.goo.gl/drCtFvGacTBqs2iD8'
-                  target='_blank'
-                >
+                <a href={CONTACT_LINKS.MAPS} target='_blank'>
                   <span className='text-card/70 hover:text-primary transition-colors'>
                     Sarandi, Paraná
                     <br />
@@ -128,7 +135,7 @@ export default function Footer() {
               <li className='flex items-center gap-3'>
                 <Phone className='text-primary h-5 w-5 shrink-0' />
                 <a
-                  href='tel:+5544999999999'
+                  href={CONTACT_LINKS.PHONE}
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
@@ -138,7 +145,7 @@ export default function Footer() {
               <li className='flex items-center gap-3'>
                 <Mail className='text-primary h-5 w-5 shrink-0' />
                 <a
-                  href='mailto:contato@adrap.ong.br'
+                  href={CONTACT_LINKS.EMAIL}
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
@@ -157,13 +164,13 @@ export default function Footer() {
             </p>
             <div className='flex gap-6 text-sm'>
               <Link
-                href='#'
+                href={LEGAL_LINKS.PRIVACY_POLICY}
                 className='text-card/50 hover:text-primary transition-colors'
               >
                 Política de Privacidade
               </Link>
               <Link
-                href='#'
+                href={LEGAL_LINKS.TERMS_OF_USE}
                 className='text-card/50 hover:text-primary transition-colors'
               >
                 Termos de Uso

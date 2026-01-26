@@ -1,8 +1,8 @@
 import About from '@/components/About'
-import Activities from '@/components/Activities'
 import GetInvolved from '@/components/Get-Involved'
 import Header from '@/components/Header'
 import Mission from '@/components/Mission'
+import Programs from '@/components/Programs'
 import SocialImpact from '@/components/Social-Impact'
 import Volunteers from '@/components/Volunteers'
 
@@ -17,7 +17,7 @@ export default function Home() {
         <About />
         <GetInvolved />
         <Mission />
-        <Activities />
+        <Programs />
         <SocialImpact />
         <Volunteers />
       </main>

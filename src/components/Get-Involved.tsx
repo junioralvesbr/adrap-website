@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
+import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Heart, Megaphone, Users } from 'lucide-react'
 import Link from 'next/link'
 
@@ -9,7 +10,7 @@ const involvementOptions = [
     description:
       'Com o seu apoio, podemos fornecer material de apoio, manter o centro de aprendizagem, capacitar professores e abrir portas para crianças carentes. Mesmo uma pequena contribuição pode fazer uma grande diferença.',
     color: 'bg-primary',
-    href: '#doar',
+    href: NAVIGATION_LINKS.DOAR,
   },
   {
     icon: Megaphone,
@@ -17,7 +18,7 @@ const involvementOptions = [
     description:
       'A arrecadação de fundos é uma das maneiras mais eficazes de apoiar nossa missão. Realizamos eventos, bazares, campanhas de arrecadação e muito mais. Fique ligado nas nossas redes sociais.',
     color: 'bg-accent',
-    href: '#eventos',
+    href: NAVIGATION_LINKS.EVENTOS,
   },
   {
     icon: Users,
@@ -25,7 +26,7 @@ const involvementOptions = [
     description:
       'O voluntariado é mais do que doar seu tempo, é doar seu coração. Seja atendendo nossas crianças, ensinando-as, preparando os lanches ou auxiliando nos nossos eventos.',
     color: 'bg-chart-3',
-    href: '#voluntarios',
+    href: NAVIGATION_LINKS.VOLUNTARIOS,
   },
 ]
 

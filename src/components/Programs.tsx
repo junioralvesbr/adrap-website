@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
+import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Disc, Music, Palette } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,7 +7,7 @@ import Link from 'next/link'
 const programs = [
   {
     icon: Music,
-    title: 'Curso de Música',
+    title: 'Aulas de Música',
     description:
       'Aulas de violão, teclado, guitarra e coral para desenvolver o talento musical das crianças.',
     image: '/images/music-class.jpg',
@@ -14,7 +15,7 @@ const programs = [
   },
   {
     icon: Palette,
-    title: 'Curso de Pintura',
+    title: 'Aulas de Pintura',
     description:
       'Aulas de pintura, desenho e artes visuais para estimular a criatividade e expressão artística.',
     image: '/images/painting-class.jpg',
@@ -22,7 +23,7 @@ const programs = [
   },
   {
     icon: Disc,
-    title: 'Curso de Dança',
+    title: 'Aulas de Dança',
     description:
       'Aulas de dança e expressão corporal para desenvolver coordenação e autoconfiança.',
     image: '/images/dance-class.jpg',
@@ -30,13 +31,13 @@ const programs = [
   },
 ]
 
-export default function Activities() {
+export default function Programs() {
   return (
-    <section id='atividades' className='bg-background py-24'>
+    <section id='programas' className='bg-background py-24'>
       <div className='container mx-auto px-4'>
         <div className='mb-16 text-center'>
           <div className='bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-semibold'>
-            Nossas Atividades
+            Nossos Programas
           </div>
           <h2 className='text-foreground mb-4 text-3xl font-bold md:text-4xl lg:text-5xl'>
             Uma Missão: Futuros Brilhantes
@@ -76,7 +77,7 @@ export default function Activities() {
                   {program.description}
                 </p>
                 <Link
-                  href='#contato'
+                  href={NAVIGATION_LINKS.CONTATO}
                   className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'
                 >
                   Ver mais

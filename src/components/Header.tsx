@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -49,7 +50,7 @@ export default function Header() {
               asChild
               className='bg-primary hover:bg-primary/90 text-primary-foreground h-12 rounded-full px-8 text-base font-semibold'
             >
-              <Link href='#doar'>
+              <Link href={NAVIGATION_LINKS.DOAR}>
                 Doe Agora
                 <ArrowRight className='ml-2 h-5 w-5' />
               </Link>
@@ -61,7 +62,7 @@ export default function Header() {
               variant='outline'
               className='border-card/30 text-card hover:bg-card/10 hover:text-accent h-12 rounded-full bg-transparent px-8 text-base font-semibold'
             >
-              <Link href='#voluntários'>
+              <Link href={NAVIGATION_LINKS.VOLUNTARIOS}>
                 <Play className='mr-2 h-5 w-5' />
                 Seja um Voluntário
               </Link>

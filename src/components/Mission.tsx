@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { NAVIGATION_LINKS } from '@/config/links'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -37,7 +38,7 @@ export default function Mission() {
               size='lg'
               className='bg-primary hover:bg-primary/90 text-primary-foreground h-14 rounded-full px-8'
             >
-              <Link href='#doar'>Doe Agora</Link>
+              <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
             </Button>
             <Button
               asChild
@@ -45,7 +46,7 @@ export default function Mission() {
               variant='outline'
               className='border-card/30 text-card hover:bg-card/10 h-14 rounded-full bg-transparent px-8'
             >
-              <Link href='#voluntario'>Seja um Voluntário</Link>
+              <Link href={NAVIGATION_LINKS.VOLUNTARIO}>Seja um Voluntário</Link>
             </Button>
             <Button
               asChild
@@ -53,7 +54,7 @@ export default function Mission() {
               variant='outline'
               className='border-card/30 text-card hover:bg-card/10 h-14 rounded-full bg-transparent px-8'
             >
-              <Link href='#campanhas'>Apoie uma Campanha</Link>
+              <Link href={NAVIGATION_LINKS.CAMPANHAS}>Apoie uma Campanha</Link>
             </Button>
           </div>
         </div>
