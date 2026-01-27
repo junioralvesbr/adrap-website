@@ -8,34 +8,34 @@ const volunteers = [
     image: '/images/voluntarios/voluntario-1.jpg',
   },
   {
-    name: 'Carlos Kawaisa',
-    role: 'Coordenador de Música',
+    name: 'Carlos Alberto Cawahisa',
+    role: 'Vice diretor e Professor de Música',
     image: '/images/voluntarios/voluntario-2.jpg',
   },
   {
     name: 'Lucimar',
-    role: 'Professora de Arte',
+    role: 'Voluntária',
     image: '/images/voluntarios/voluntario-3.jpg',
   },
   {
     name: 'Lucélia',
-    role: 'Voluntário',
+    role: 'Voluntária',
     image: '/images/voluntarios/voluntario-4.jpg',
   },
   {
     name: 'Marta',
-    role: 'Voluntário',
+    role: 'Voluntária',
     image: '/images/voluntarios/voluntario-5.jpg',
   },
   {
     name: 'Inês',
-    role: 'Voluntário',
+    role: 'Professora de Artes',
     image: '/images/voluntarios/voluntario-6.jpg',
     position: 'object-center',
   },
   {
     name: 'Marlene',
-    role: 'Voluntário',
+    role: 'Voluntária',
     image: '/images/voluntarios/voluntario-7.jpg',
   },
   {
