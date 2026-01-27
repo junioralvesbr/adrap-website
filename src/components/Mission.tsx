@@ -46,7 +46,9 @@ export default function Mission() {
               variant='outline'
               className='border-card/30 text-card hover:bg-card/10 h-14 rounded-full bg-transparent px-8'
             >
-              <Link href={NAVIGATION_LINKS.VOLUNTARIO}>Seja um Voluntário</Link>
+              <Link href={NAVIGATION_LINKS.VOLUNTARIOS}>
+                Seja um Voluntário
+              </Link>
             </Button>
             <Button
               asChild

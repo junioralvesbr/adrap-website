@@ -28,8 +28,14 @@ export default function NavBar() {
             href={NAVIGATION_LINKS.HOME}
             className='flex items-center gap-3'
           >
-            <div className='flex items-center justify-center rounded-full'>
-              <Image src='/logo.jpg' alt='Logo' width={50} height={50} />
+            <div className='relative flex h-12 w-12 items-center justify-center rounded-full'>
+              <Image
+                src='/logo.jpg'
+                alt='Logo'
+                fill
+                className='aspect-square'
+                sizes='(min-width: 1024px) 128px, (min-width: 768px) 96px, 64px'
+              />
             </div>
             <div className='flex flex-col'>
               <span className='text-accent text-xl font-bold tracking-tight'>

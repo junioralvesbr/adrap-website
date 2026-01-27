@@ -17,13 +17,13 @@ export default function About() {
       <div className='container mx-auto px-4'>
         <div className='grid items-center gap-16 lg:grid-cols-2'>
           <div className='relative'>
-            <div className='relative overflow-hidden rounded-3xl shadow-2xl'>
+            <div className='relative h-[500px] w-[600px] overflow-hidden rounded-3xl shadow-2xl'>
               <Image
                 src='/images/sobre.jpg'
                 alt='Crianças em aula de música'
-                width={600}
-                height={500}
-                className='h-[500px] w-full object-cover'
+                fill
+                sizes='(min-width: 1024px) 600px, (min-width: 768px) 400px, 300px'
+                className='object-cover'
               />
             </div>
             <div className='bg-primary text-primary-foreground absolute -right-8 -bottom-8 hidden rounded-2xl p-8 shadow-xl md:block'>
