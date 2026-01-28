@@ -20,7 +20,7 @@ const quickLinks = [
   { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
   { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
   { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
-  { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
+  // { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
   { href: NAVIGATION_LINKS.DOAR, label: 'Doe Agora' },
 ]
 
@@ -138,7 +138,7 @@ export default function Footer() {
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
-                  (44) 99999-9999
+                  (44) 9 98939526
                 </a>
               </li>
               <li className='flex items-center gap-3'>
@@ -148,7 +148,7 @@ export default function Footer() {
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
-                  contato@adrap.ong.br
+                  associacao@gmail.com
                 </a>
               </li>
             </ul>

@@ -13,7 +13,7 @@ const navLinks = [
   { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
   { href: NAVIGATION_LINKS.IMPACTO, label: 'Impacto' },
   { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
-  { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
+  // { href: NAVIGATION_LINKS.EVENTOS, label: '/Eventos' },
   { href: NAVIGATION_LINKS.CONTATO, label: 'Contato' },
 ]
 

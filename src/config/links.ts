@@ -28,9 +28,9 @@ export const SOCIAL_LINKS = {
 
 // URLs de contato
 export const CONTACT_LINKS = {
-  MAPS: 'https://maps.app.goo.gl/drCtFvGacTBqs2iD8',
-  PHONE: 'tel:+5544999999999',
-  EMAIL: 'mailto:contato@adrap.ong.br',
+  MAPS: 'https://maps.app.goo.gl/7PK3oDJ3tPHGCe2a7',
+  PHONE: 'tel:+5544998939526',
+  EMAIL: 'mailto:associacao@gmail.com',
 } as const
 
 // URLs de páginas legais
