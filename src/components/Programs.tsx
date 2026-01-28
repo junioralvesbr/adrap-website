@@ -10,7 +10,7 @@ const programs = [
     title: 'Aulas de Música',
     description:
       'Aulas de violão, teclado, bateria, musicalização infantil e coral para desenvolver o talento musical das crianças.',
-    image: '/images/music-class.jpg',
+    image: '/images/programas/aula-musica.jpg',
     color: 'bg-blue-600',
     href: PROGRAM_LINKS.MUSICA,
   },
@@ -19,7 +19,7 @@ const programs = [
     title: 'Aulas de Artes',
     description:
       'Aulas de pintura, desenho e artesanato para estimular a criatividade e expressão artística.',
-    image: '/images/arts-class.jpg',
+    image: '/images/programas/pintura.jpg',
     color: 'bg-red-600',
     href: PROGRAM_LINKS.AULAS_ARTE,
   },
@@ -27,7 +27,7 @@ const programs = [
     icon: Disc,
     title: 'Apoio Educacional',
     description: 'Aulas de dança e inglês para desenvolvimento pessoal.',
-    image: '/images/education.png',
+    image: '/images/programas/education.png',
     color: 'bg-purple-600',
     href: PROGRAM_LINKS.APOIO_EDUCACIONAL,
   },
