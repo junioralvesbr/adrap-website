@@ -26,8 +26,7 @@ const quickLinks = [
 
 const programs = [
   { href: PROGRAM_LINKS.MUSICA, label: 'Aulas de Música' },
-  { href: PROGRAM_LINKS.PINTURA, label: 'Aulas de Pintura' },
-  { href: PROGRAM_LINKS.DANCA, label: 'Aulas de Dança' },
+  { href: PROGRAM_LINKS.AULAS_ARTE, label: 'Aulas de Arte' },
   { href: PROGRAM_LINKS.APOIO_EDUCACIONAL, label: 'Apoio Educacional' },
 ]
 

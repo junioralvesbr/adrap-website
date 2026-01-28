@@ -9,12 +9,12 @@
 export const NAVIGATION_LINKS = {
   HOME: '/',
   INICIO: '#inicio',
-  SOBRE: '#sobre',
-  PROGRAMAS: '#programas',
-  IMPACTO: '#impacto',
-  VOLUNTARIOS: '#voluntarios',
-  EVENTOS: '#eventos',
-  CONTATO: '#contato',
+  SOBRE: '/#sobre',
+  PROGRAMAS: '/#programas',
+  IMPACTO: '/#impacto',
+  VOLUNTARIOS: '/#voluntarios',
+  EVENTOS: '/#eventos',
+  CONTATO: '/#contato',
   DOAR: '#doar',
   CAMPANHAS: '#campanhas',
 } as const
@@ -39,10 +39,10 @@ export const LEGAL_LINKS = {
   TERMS_OF_USE: '#',
 } as const
 
-// URLs de programas (placeholder - ajuste conforme necessário)
+// URLs de programas
 export const PROGRAM_LINKS = {
-  MUSICA: '#',
-  PINTURA: '#',
-  DANCA: '#',
-  APOIO_EDUCACIONAL: '#',
+  MUSICA: '/programs/musica',
+  AULAS_ARTE: '/programs/artes',
+  APOIO_EDUCACIONAL: '/programs/apoio-educacional',
+  ATENDIMENTO: '/programs/atendimento',
 } as const

@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { NAVIGATION_LINKS } from '@/config/links'
+import { PROGRAM_LINKS } from '@/config/links'
 import { ArrowRight, Disc, Music, Palette } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,25 +9,27 @@ const programs = [
     icon: Music,
     title: 'Aulas de Música',
     description:
-      'Aulas de violão, teclado, guitarra e coral para desenvolver o talento musical das crianças.',
+      'Aulas de violão, teclado, bateria, musicalização infantil e coral para desenvolver o talento musical das crianças.',
     image: '/images/music-class.jpg',
-    color: 'bg-primary',
+    color: 'bg-blue-600',
+    href: PROGRAM_LINKS.MUSICA,
   },
   {
     icon: Palette,
-    title: 'Aulas de Pintura',
+    title: 'Aulas de Artes',
     description:
-      'Aulas de pintura, desenho e artes visuais para estimular a criatividade e expressão artística.',
-    image: '/images/painting-class.jpg',
-    color: 'bg-accent',
+      'Aulas de pintura, desenho e artesanato para estimular a criatividade e expressão artística.',
+    image: '/images/arts-class.jpg',
+    color: 'bg-red-600',
+    href: PROGRAM_LINKS.AULAS_ARTE,
   },
   {
     icon: Disc,
-    title: 'Aulas de Dança',
-    description:
-      'Aulas de dança e expressão corporal para desenvolver coordenação e autoconfiança.',
-    image: '/images/dance-class.jpg',
-    color: 'bg-chart-3',
+    title: 'Apoio Educacional',
+    description: 'Aulas de dança e inglês para desenvolvimento pessoal.',
+    image: '/images/education.png',
+    color: 'bg-purple-600',
+    href: PROGRAM_LINKS.APOIO_EDUCACIONAL,
   },
 ]
 
@@ -60,6 +62,7 @@ export default function Programs() {
                   src={program.image || '/placeholder.svg'}
                   alt={program.title}
                   fill
+                  sizes='(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw'
                   className='object-cover transition-transform duration-500 group-hover:scale-110'
                 />
                 <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
@@ -77,7 +80,7 @@ export default function Programs() {
                   {program.description}
                 </p>
                 <Link
-                  href={NAVIGATION_LINKS.CONTATO}
+                  href={program.href}
                   className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'
                 >
                   Ver mais
