@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { CONTACT_LINKS } from '@/config/links'
 import { Calendar, CheckCircle2, Clock, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -295,7 +296,9 @@ export function ProgramsPageTemplate({
                   className='w-full rounded-full text-white'
                   style={{ backgroundColor: accentColor }}
                 >
-                  <a href='#matricula'>Fazer Matrícula</a>
+                  <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
+                    Fazer Matrícula
+                  </a>
                 </Button>
               </div>
             </div>

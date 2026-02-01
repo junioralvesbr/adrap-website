@@ -1,40 +1,29 @@
 import { ProgramsPageTemplate } from '@/components/ProgramsPageTemplate'
 
-const danceModules = [
+const Modules = [
   {
-    title: 'Breaking Foundation',
+    title: 'Dança Break',
     description:
-      'Aprenda os fundamentos do breaking, incluindo toprock, footwork e freezes básicos. A base para se tornar um verdadeiro b-boy ou b-girl.',
+      'Aprenda os fundamentos do breaking, incluindo toprock, footwork e freezes básicos. Desenvolva sua criatividade e expressões corporais.',
     image: '/images/programas/breakdance-class.jpg',
     features: [
       'Toprock e movimentos em pé',
       'Footwork e movimentos de chão',
       'Freezes básicos e intermediários',
       'Musicalidade e ritmo',
-    ],
-  },
-  {
-    title: 'Power Moves',
-    description:
-      'Evolua para movimentos mais avançados como windmill, headspin e outros power moves que impressionam em qualquer batalha.',
-    image: '/images/programas/breakdance-group.jpg',
-    features: [
       'Condicionamento físico',
-      'Técnicas de rotação',
-      'Movimentos acrobáticos',
-      'Segurança e prevenção de lesões',
     ],
   },
   {
-    title: 'Batalhas e Cyphers',
+    title: 'Aulas de Inglês',
     description:
-      'Aprenda a se expressar em batalhas e rodas de breaking, desenvolvendo seu estilo único e criatividade na improvisação.',
-    image: '/images/programas/education.png',
+      'Aulas de inglês para o desenvolvimento de nossas crianças no ambito pessoal e profissional.',
+    image: '/images/programas/aulas-ingles.jpg',
     features: [
-      'Improvisação e freestyle',
-      'Desenvolvimento de estilo pessoal',
-      'Etiqueta de batalha',
-      'Participação em eventos',
+      'Conversação e vocabulário prático',
+      'Desenvolvimento de leitura e escrita',
+      'Apoio pedagógico',
+      'Apoio psicossocial',
     ],
   },
 ]
@@ -44,21 +33,22 @@ const danceBenefits = [
   'Desenvolvimento da coordenação e equilíbrio',
   'Expressão corporal e criatividade',
   'Disciplina e persistência nos treinos',
-  'Cultura hip hop e respeito às origens',
-  'Socialização e trabalho em equipe (crews)',
   'Autoconfiança e superação de limites',
-  'Oportunidade de participar de eventos e batalhas',
+  'Socialização e trabalho em equipe',
+  'Desenvolvimento de um novo idioma',
+  'Desenvolvimento de habilidades de leitura e escrita',
+  'Desenvolvimento de comunicação',
 ]
 
 export default function ApoioEducacionalPage() {
   return (
     <ProgramsPageTemplate
-      title='Apoi Educacional'
+      title='Apoio Educacional'
       subtitle='Programa de Apoio Educacional'
-      description='Entre para o mundo do breaking e desenvolva força, criatividade e estilo. Uma arte que nasceu nas ruas e conquista palcos ao redor do mundo.'
+      description='Um programa completo que integra a expressão corporal da dança break, o ensino da língua inglesa e o apoio pedagógico, preparando jovens para os desafios do futuro com criatividade e conhecimento.'
       heroImage='/images/programas/breakdance-class.jpg'
       accentColor='#9333ea'
-      modules={danceModules}
+      modules={Modules}
       schedule={{
         days: 'Quarta e Sábado',
         time: '15h às 18h',

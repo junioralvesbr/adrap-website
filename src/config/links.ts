@@ -31,6 +31,7 @@ export const CONTACT_LINKS = {
   MAPS: 'https://maps.app.goo.gl/7PK3oDJ3tPHGCe2a7',
   PHONE: 'tel:+5544998939526',
   EMAIL: 'mailto:associacao@gmail.com',
+  WHATSAPP: 'https://wa.me/5544998939526',
 } as const
 
 // URLs de páginas legais
