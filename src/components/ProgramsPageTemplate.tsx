@@ -2,8 +2,15 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CONTACT_LINKS } from '@/config/links'
-import { Calendar, CheckCircle2, Clock, MapPin, Users } from 'lucide-react'
+import { CONTACT_LINKS, NAVIGATION_LINKS } from '@/config/links'
+import {
+  ArrowLeft,
+  Calendar,
+  CheckCircle2,
+  Clock,
+  MapPin,
+  Users,
+} from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -30,6 +37,16 @@ interface CoursePageTemplateProps {
   benefits: string[]
 }
 
+const navLinks = [
+  { href: NAVIGATION_LINKS.INICIO, label: 'Início' },
+  { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
+  { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
+  { href: NAVIGATION_LINKS.IMPACTO, label: 'Impactos' },
+  { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
+  // { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
+  { href: NAVIGATION_LINKS.CONTATO, label: 'Contato' },
+]
+
 export function ProgramsPageTemplate({
   title,
   subtitle,
@@ -43,25 +60,38 @@ export function ProgramsPageTemplate({
   return (
     <main className='bg-background min-h-screen'>
       {/* Header Navigation */}
-      {/* <header className='bg-card/95 border-border fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md'>
+      <header className='bg-card/95 border-border sticky top-0 right-0 left-0 z-50 border-b backdrop-blur-md'>
         <div className='container mx-auto px-4'>
           <div className='flex h-20 items-center justify-between'>
             <Link
-              href='/'
+              href={NAVIGATION_LINKS.HOME}
               className='text-foreground hover:text-primary flex items-center gap-3 transition-colors'
             >
               <ArrowLeft className='h-5 w-5' />
-              <span className='font-medium'>Voltar ao Início</span>
+              <span className='font-medium'>Voltar a Home</span>
             </Link>
+            <nav className='hidden items-center gap-8 lg:flex'>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className='text-foreground/80 hover:text-primary text-sm font-medium transition-colors'
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
             <Button
               asChild
               className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6'
             >
-              <a href='#matricula'>Fazer Matrícula</a>
+              <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
+                Fazer Matrícula
+              </a>
             </Button>
           </div>
         </div>
-      </header> */}
+      </header>
 
       {/* Hero Section */}
       <section className='relative flex min-h-[70vh] items-center pt-20'>
