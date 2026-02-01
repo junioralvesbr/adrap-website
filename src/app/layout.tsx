@@ -1,5 +1,4 @@
 import Footer from '@/components/Footer'
-import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -23,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang='pt-BR'>
       <body className={`${_poppins.variable} font-sans antialiased`}>
-        <NavBar />
         {children}
         <Footer />
       </body>
