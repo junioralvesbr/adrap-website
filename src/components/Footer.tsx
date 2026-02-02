@@ -5,15 +5,7 @@ import {
   PROGRAM_LINKS,
   SOCIAL_LINKS,
 } from '@/config/links'
-import {
-  Facebook,
-  Heart,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  Youtube,
-} from 'lucide-react'
+import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react'
 import Link from 'next/link'
 
 const quickLinks = [
@@ -40,9 +32,6 @@ export default function Footer() {
               href={NAVIGATION_LINKS.HOME}
               className='mb-6 flex items-center gap-3'
             >
-              <div className='bg-primary flex h-12 w-12 items-center justify-center rounded-full'>
-                <Heart className='text-primary-foreground h-6 w-6' />
-              </div>
               <div className='flex flex-col'>
                 <span className='text-card text-xl font-bold tracking-tight'>
                   ADRAP
@@ -134,21 +123,21 @@ export default function Footer() {
               <li className='flex items-center gap-3'>
                 <Phone className='text-primary h-5 w-5 shrink-0' />
                 <a
-                  href={CONTACT_LINKS.PHONE}
+                  href={`tel:${CONTACT_LINKS.PHONE}`}
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
-                  (44) 9 98939526
+                  {CONTACT_LINKS.PHONE}
                 </a>
               </li>
               <li className='flex items-center gap-3'>
                 <Mail className='text-primary h-5 w-5 shrink-0' />
                 <a
-                  href={CONTACT_LINKS.EMAIL}
+                  href={`mailto:${CONTACT_LINKS.EMAIL}`}
                   className='text-card/70 hover:text-primary transition-colors'
                   target='_blank'
                 >
-                  associacao@gmail.com
+                  {CONTACT_LINKS.EMAIL}
                 </a>
               </li>
             </ul>

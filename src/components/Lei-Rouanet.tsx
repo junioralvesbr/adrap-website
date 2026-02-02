@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function LeiRouanet() {
   return (
-    <section id='apoiadores' className='bg-card py-16 md:py-24'>
+    <section id='apoiadores' className='bg-background py-16 md:py-24'>
       <div className='container mx-auto px-4'>
         {/* Header */}
         <div className='mb-12 text-center'>
@@ -19,7 +19,7 @@ export default function LeiRouanet() {
         </div>
 
         {/* Sponsor Logos Block - Following Lei Rouanet Manual Guidelines */}
-        <div className='bg-background rounded-2xl p-8 shadow-sm md:p-12'>
+        <div className='bg-muted rounded-2xl p-8 shadow-xl md:p-12'>
           {/* Main Presentation Text */}
           <p className='text-foreground mb-10 text-center text-lg font-medium'>
             Ministério da Cultura, CPA e Usina Santa Teresinha apresentam:
