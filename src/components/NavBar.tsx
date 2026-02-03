@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import DonationModal from './donation-modal'
 
 const navLinks = [
   { href: NAVIGATION_LINKS.INICIO, label: 'Início' },
@@ -60,14 +61,14 @@ export default function NavBar() {
           </nav>
 
           <div className='hidden items-center gap-4 lg:flex'>
-            <Button
-              asChild
-              className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6'
-            >
-              <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
-            </Button>
+            <DonationModal>
+              <Button className='bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer rounded-full px-6'>
+                Doe Agora
+              </Button>
+            </DonationModal>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className='text-foreground p-2 lg:hidden'
@@ -77,6 +78,7 @@ export default function NavBar() {
           </button>
         </div>
 
+        {/* Mobile Menu */}
         {isOpen && (
           <div className='border-border border-t py-4 lg:hidden'>
             <nav className='flex flex-col gap-4'>
@@ -90,12 +92,12 @@ export default function NavBar() {
                   {link.label}
                 </Link>
               ))}
-              <Button
-                asChild
-                className='bg-primary hover:bg-primary/90 text-primary-foreground mt-2 rounded-full'
-              >
-                <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
-              </Button>
+
+              <DonationModal>
+                <Button className='bg-primary hover:bg-primary/90 text-primary-foreground mt-2 rounded-full'>
+                  Doe Agora
+                </Button>
+              </DonationModal>
             </nav>
           </div>
         )}
