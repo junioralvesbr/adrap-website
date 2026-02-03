@@ -17,9 +17,9 @@ import { Building2, Check, Copy, FileText, Heart, QrCode } from 'lucide-react'
 import { useState } from 'react'
 
 const ADRAP_INFO = {
-  razaoSocial: 'Associação de Dança do Recife',
-  cnpj: '04.751.724/0001-10',
-  chavePix: '00038166000105',
+  razaoSocial: 'ADRAP - Associação das Ruas ao Palácio',
+  cnpj: '00.000.000/0000-00',
+  chavePix: '00000000000000',
 }
 
 export default function DonationModal({
