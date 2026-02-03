@@ -50,9 +50,8 @@ export default function ApoioEducacionalPage() {
       accentColor='#9333ea'
       modules={Modules}
       schedule={{
-        days: 'Quarta e Sábado',
-        time: '15h às 18h',
-        duration: 'Turmas de 1h30',
+        days: 'Quarta, Quinta e Sábado',
+        duration: 'Turmas de 1h',
         location: 'Sede ADRAP',
       }}
       benefits={danceBenefits}

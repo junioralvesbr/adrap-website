@@ -14,13 +14,13 @@ const artModules = [
     ],
   },
   {
-    title: 'Teatro de Fantoches',
+    title: 'Desenho Cartoon',
     description:
-      'Aprenda a criar e manipular fantoches, desenvolvendo habilidades de expressão, criatividade e contação de histórias.',
+      'Aprenda a criar e desenhar personagens de desenho cartoon, desenvolvendo habilidades de expressão, criatividade e contação de histórias.',
     image: '/images/programas/fantoche.jpg',
     features: [
-      'Confecção de fantoches',
-      'Técnicas de manipulação',
+      'Desenho de personagens',
+      'Técnicas de desenho',
       'Criação de histórias e roteiros',
       'Apresentações teatrais',
     ],
@@ -60,8 +60,7 @@ export default function ArtesPage() {
       accentColor='#dc2626'
       modules={artModules}
       schedule={{
-        days: 'Terça e Quinta',
-        time: '14h às 17h',
+        days: 'Segunda a Sabado',
         duration: 'Turmas de 1h30',
         location: 'Sede ADRAP',
       }}

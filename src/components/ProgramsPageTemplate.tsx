@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { CONTACT_LINKS } from '@/config/links'
-import { Calendar, CheckCircle2, Clock, MapPin, Users } from 'lucide-react'
+import { Calendar, CheckCircle2, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -23,7 +23,7 @@ interface CoursePageTemplateProps {
   modules: CourseModule[]
   schedule: {
     days: string
-    time: string
+    // time: string
     duration: string
     location: string
   }
@@ -106,12 +106,12 @@ export function ProgramsPageTemplate({
                   {schedule.days}
                 </span>
               </div>
-              <div className='flex items-center gap-3'>
+              {/* <div className='flex items-center gap-3'>
                 <Clock className='h-5 w-5' style={{ color: accentColor }} />
                 <span className='text-foreground font-medium'>
                   {schedule.time}
                 </span>
-              </div>
+              </div> */}
               <div className='flex items-center gap-3'>
                 <Users className='h-5 w-5' style={{ color: accentColor }} />
                 <span className='text-foreground font-medium'>
@@ -129,7 +129,7 @@ export function ProgramsPageTemplate({
         </section>
 
         {/* Modules Section */}
-        <section id='modalidades' className='mx-auto max-w-6xl py-20 md:py-28'>
+        <section id='modalidades' className='mx-auto max-w-6xl py-20'>
           <div className='container mx-auto px-4'>
             <div className='mx-auto mb-16 max-w-3xl text-center'>
               <span
@@ -154,7 +154,7 @@ export function ProgramsPageTemplate({
               {modules.map((module, index) => (
                 <Card
                   key={index}
-                  className='group overflow-hidden border-0 shadow-lg transition-shadow duration-300 hover:shadow-xl'
+                  className='group overflow-hidden border-0 py-0 shadow-lg transition-shadow duration-300 hover:shadow-xl'
                 >
                   <div className='relative h-64 overflow-hidden'>
                     <Image
@@ -245,7 +245,7 @@ export function ProgramsPageTemplate({
                         Idade mínima
                       </span>
                       <span className='text-foreground font-semibold'>
-                        7 anos
+                        5 anos
                       </span>
                     </div>
                     <div className='border-border flex items-center justify-between border-b pb-4'>

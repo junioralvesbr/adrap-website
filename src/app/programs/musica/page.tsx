@@ -38,9 +38,9 @@ const musicModules = [
     ],
   },
   {
-    title: 'Coral',
+    title: 'Musicalização Infantil',
     description:
-      'Participe do nosso coral e desenvolva sua voz, aprendendo técnicas vocais, respiração e interpretação em grupo.',
+      'Aulas práticas para crianças, desenvolvendo habilidades musicais e criatividade.',
     image: '/images/programas/coral.jpg',
     features: [
       'Técnicas de respiração',
@@ -72,8 +72,7 @@ export default function MusicaPage() {
       accentColor='#2563eb'
       modules={musicModules}
       schedule={{
-        days: 'Segunda a Sexta',
-        time: '14h às 17h',
+        days: 'Segunda a Sabado',
         duration: 'Turmas de 1h',
         location: 'Sede ADRAP',
       }}
