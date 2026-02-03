@@ -11,8 +11,62 @@ const _poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'ADRAP - Associação das Ruas ao Palácio',
-  description: 'ADRAP - Associação das Ruas ao Palácio',
+  metadataBase: new URL('https://adrap.ong.br'),
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['associacaoadrap@gmail.com', 'https://adrap.ong.br'],
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    images: '/logo.png',
+    title: 'ADRAP - Associação das Ruas ao Palácio',
+  },
+  authors: { name: 'Junior Alves' },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+    shortcut: ['/leticiamartins-icon.png'],
+    other: [
+      {
+        rel: '/android-chrome-192x192.png',
+        url: '/android-chrome-512x512.png',
+      },
+    ],
+  },
+  twitter: {
+    title: 'ADRAP - Associação das Ruas ao Palácio',
+    description:
+      'A ADRAP é uma ONG que visa promover a dignidade e a dignidade das pessoas que vivem na rua.',
+    // siteId: 'prj_4IBaNnMK4MnvcPrgEFHHNSBlhINE',
+    creator: 'Junior Alves',
+    // creatorId: 'lX02uwy4OteDC5MLg4V8nXvP',
+    images: ['https://www.adrap.ong.br/logo.png'], // Must be an absolute URL
+  },
+  manifest: '/site.webmanifest',
+  assets: ['https://www.adrap.ong.br/images'],
+  category: 'Nonprofit',
+  pinterest: {
+    richPin: true,
+  },
 }
 
 export default function RootLayout({

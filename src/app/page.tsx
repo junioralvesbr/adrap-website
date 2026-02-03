@@ -6,6 +6,12 @@ import Mission from '@/components/Mission'
 import Programs from '@/components/Programs'
 import SocialImpact from '@/components/Social-Impact'
 import Volunteers from '@/components/Volunteers'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'ADRAP - Associação das Ruas ao Palácio',
+  description: 'ADRAP - Associação das Ruas ao Palácio',
+}
 
 export default function Home() {
   return (
