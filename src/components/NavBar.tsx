@@ -22,7 +22,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='border-border fixed top-0 right-0 left-0 z-50 border-b bg-white backdrop-blur-md'>
+    <div className='border-border sticky top-0 right-0 left-0 z-50 border-b bg-white backdrop-blur-md'>
       <div className='container mx-auto px-4'>
         <div className='flex h-20 items-center justify-between'>
           <Link

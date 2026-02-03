@@ -2,15 +2,8 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { CONTACT_LINKS, NAVIGATION_LINKS } from '@/config/links'
-import {
-  ArrowLeft,
-  Calendar,
-  CheckCircle2,
-  Clock,
-  MapPin,
-  Users,
-} from 'lucide-react'
+import { CONTACT_LINKS } from '@/config/links'
+import { Calendar, CheckCircle2, Clock, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -37,16 +30,6 @@ interface CoursePageTemplateProps {
   benefits: string[]
 }
 
-const navLinks = [
-  { href: NAVIGATION_LINKS.INICIO, label: 'Início' },
-  { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
-  { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
-  { href: NAVIGATION_LINKS.IMPACTO, label: 'Impactos' },
-  { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
-  // { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
-  { href: NAVIGATION_LINKS.CONTATO, label: 'Contato' },
-]
-
 export function ProgramsPageTemplate({
   title,
   subtitle,
@@ -58,43 +41,9 @@ export function ProgramsPageTemplate({
   benefits,
 }: CoursePageTemplateProps) {
   return (
-    <main className='bg-background min-h-screen'>
-      {/* Header Navigation */}
-      <header className='bg-card/95 border-border sticky top-0 right-0 left-0 z-50 border-b backdrop-blur-md'>
-        <div className='container mx-auto px-4'>
-          <div className='flex h-20 items-center justify-between'>
-            <Link
-              href={NAVIGATION_LINKS.HOME}
-              className='text-foreground hover:text-primary flex items-center gap-3 transition-colors'
-            >
-              <ArrowLeft className='h-5 w-5' />
-              <span className='font-medium'>Voltar a Home</span>
-            </Link>
-            <nav className='hidden items-center gap-8 lg:flex'>
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className='text-foreground/80 hover:text-primary text-sm font-medium transition-colors'
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-            <Button
-              asChild
-              className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6'
-            >
-              <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
-                Fazer Matrícula
-              </a>
-            </Button>
-          </div>
-        </div>
-      </header>
-
+    <div className='bg-background min-h-screen'>
       {/* Hero Section */}
-      <section className='relative flex min-h-[70vh] items-center pt-20'>
+      <header className='relative flex min-h-[70vh] items-center pt-20'>
         <div className='absolute inset-0'>
           <Image
             src={heroImage || '/placeholder.svg'}
@@ -141,112 +90,48 @@ export function ProgramsPageTemplate({
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Schedule Info Bar */}
-      <section
-        className='border-border border-b py-6'
-        style={{ backgroundColor: accentColor + '15' }}
-      >
-        <div className='container mx-auto px-4'>
-          <div className='flex flex-wrap items-center justify-center gap-8 md:gap-16'>
-            <div className='flex items-center gap-3'>
-              <Calendar className='h-5 w-5' style={{ color: accentColor }} />
-              <span className='text-foreground font-medium'>
-                {schedule.days}
-              </span>
-            </div>
-            <div className='flex items-center gap-3'>
-              <Clock className='h-5 w-5' style={{ color: accentColor }} />
-              <span className='text-foreground font-medium'>
-                {schedule.time}
-              </span>
-            </div>
-            <div className='flex items-center gap-3'>
-              <Users className='h-5 w-5' style={{ color: accentColor }} />
-              <span className='text-foreground font-medium'>
-                {schedule.duration}
-              </span>
-            </div>
-            <div className='flex items-center gap-3'>
-              <MapPin className='h-5 w-5' style={{ color: accentColor }} />
-              <span className='text-foreground font-medium'>
-                {schedule.location}
-              </span>
+      <main>
+        <section
+          className='border-border border-b py-6'
+          style={{ backgroundColor: accentColor + '15' }}
+        >
+          <div className='container mx-auto px-4'>
+            <div className='flex flex-wrap items-center justify-center gap-8 md:gap-16'>
+              <div className='flex items-center gap-3'>
+                <Calendar className='h-5 w-5' style={{ color: accentColor }} />
+                <span className='text-foreground font-medium'>
+                  {schedule.days}
+                </span>
+              </div>
+              <div className='flex items-center gap-3'>
+                <Clock className='h-5 w-5' style={{ color: accentColor }} />
+                <span className='text-foreground font-medium'>
+                  {schedule.time}
+                </span>
+              </div>
+              <div className='flex items-center gap-3'>
+                <Users className='h-5 w-5' style={{ color: accentColor }} />
+                <span className='text-foreground font-medium'>
+                  {schedule.duration}
+                </span>
+              </div>
+              <div className='flex items-center gap-3'>
+                <MapPin className='h-5 w-5' style={{ color: accentColor }} />
+                <span className='text-foreground font-medium'>
+                  {schedule.location}
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Modules Section */}
-      <section id='modalidades' className='mx-auto max-w-6xl py-20 md:py-28'>
-        <div className='container mx-auto px-4'>
-          <div className='mx-auto mb-16 max-w-3xl text-center'>
-            <span
-              className='mb-4 inline-block rounded-full px-4 py-1.5 text-sm font-semibold'
-              style={{
-                backgroundColor: accentColor + '20',
-                color: accentColor,
-              }}
-            >
-              Modalidades
-            </span>
-            <h2 className='text-foreground mb-4 text-3xl font-bold text-balance md:text-4xl'>
-              Conheça Nossas Aulas
-            </h2>
-            <p className='text-muted-foreground text-lg'>
-              Oferecemos diversas modalidades para desenvolver talentos e
-              habilidades
-            </p>
-          </div>
-
-          <div className='grid gap-8 md:grid-cols-2'>
-            {modules.map((module, index) => (
-              <Card
-                key={index}
-                className='group overflow-hidden border-0 shadow-lg transition-shadow duration-300 hover:shadow-xl'
-              >
-                <div className='relative h-64 overflow-hidden'>
-                  <Image
-                    src={module.image || '/placeholder.svg'}
-                    alt={module.title}
-                    fill
-                    className='object-cover transition-transform duration-500 group-hover:scale-105'
-                  />
-                  <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
-                  <h3 className='absolute bottom-4 left-6 text-2xl font-bold text-white'>
-                    {module.title}
-                  </h3>
-                </div>
-                <CardContent className='p-6'>
-                  <p className='text-muted-foreground mb-4'>
-                    {module.description}
-                  </p>
-                  <ul className='space-y-2'>
-                    {module.features.map((feature, idx) => (
-                      <li key={idx} className='flex items-center gap-2'>
-                        <CheckCircle2
-                          className='h-4 w-4 shrink-0'
-                          style={{ color: accentColor }}
-                        />
-                        <span className='text-foreground text-sm'>
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className='bg-muted/50 py-20 md:py-28'>
-        <div className='container mx-auto px-4'>
-          <div className='mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2'>
-            <div>
+        {/* Modules Section */}
+        <section id='modalidades' className='mx-auto max-w-6xl py-20 md:py-28'>
+          <div className='container mx-auto px-4'>
+            <div className='mx-auto mb-16 max-w-3xl text-center'>
               <span
                 className='mb-4 inline-block rounded-full px-4 py-1.5 text-sm font-semibold'
                 style={{
@@ -254,90 +139,159 @@ export function ProgramsPageTemplate({
                   color: accentColor,
                 }}
               >
-                Por que participar?
+                Modalidades
               </span>
-              <h2 className='text-foreground mb-6 text-3xl font-bold text-balance md:text-4xl'>
-                Benefícios para o Desenvolvimento
+              <h2 className='text-foreground mb-4 text-3xl font-bold text-balance md:text-4xl'>
+                Conheça Nossas Aulas
               </h2>
-              <p className='text-muted-foreground mb-8 text-lg'>
-                Nossas aulas vão além do ensino técnico, promovendo o
-                desenvolvimento integral da criança.
+              <p className='text-muted-foreground text-lg'>
+                Oferecemos diversas modalidades para desenvolver talentos e
+                habilidades
               </p>
-              <ul className='space-y-4'>
-                {benefits.map((benefit, index) => (
-                  <li key={index} className='flex items-start gap-3'>
-                    <div
-                      className='mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full'
-                      style={{ backgroundColor: accentColor }}
-                    >
-                      <CheckCircle2 className='h-4 w-4 text-white' />
-                    </div>
-                    <span className='text-foreground'>{benefit}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
-            <div className='relative'>
-              <div
-                className='absolute -inset-4 rounded-3xl opacity-20'
-                style={{ backgroundColor: accentColor }}
-              />
-              <div className='bg-card relative rounded-2xl p-8 shadow-xl'>
-                <h3 className='text-foreground mb-2 text-2xl font-bold'>
-                  Vagas Limitadas
-                </h3>
-                <p className='text-muted-foreground mb-6'>
-                  Garanta sua vaga e faça parte dessa transformação
-                </p>
-                <div className='mb-6 space-y-4'>
-                  <div className='border-border flex items-center justify-between border-b pb-4'>
-                    <span className='text-muted-foreground'>Idade mínima</span>
-                    <span className='text-foreground font-semibold'>
-                      7 anos
-                    </span>
-                  </div>
-                  <div className='border-border flex items-center justify-between border-b pb-4'>
-                    <span className='text-muted-foreground'>
-                      Vagas por turma
-                    </span>
-                    <span className='text-foreground font-semibold'>
-                      15 alunos
-                    </span>
-                  </div>
-                  <div className='border-border flex items-center justify-between border-b pb-4'>
-                    <span className='text-muted-foreground'>Material</span>
-                    <span className='text-foreground font-semibold'>
-                      Incluso
-                    </span>
-                  </div>
-                  <div className='flex items-center justify-between'>
-                    <span className='text-muted-foreground'>Investimento</span>
-                    <span
-                      className='text-foreground font-semibold'
-                      style={{ color: accentColor }}
-                    >
-                      Gratuito
-                    </span>
-                  </div>
-                </div>
-                <Button
-                  asChild
-                  size='lg'
-                  className='w-full rounded-full text-white'
-                  style={{ backgroundColor: accentColor }}
+
+            <div className='grid gap-8 md:grid-cols-2'>
+              {modules.map((module, index) => (
+                <Card
+                  key={index}
+                  className='group overflow-hidden border-0 shadow-lg transition-shadow duration-300 hover:shadow-xl'
                 >
-                  <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
-                    Fazer Matrícula
-                  </a>
-                </Button>
+                  <div className='relative h-64 overflow-hidden'>
+                    <Image
+                      src={module.image || '/placeholder.svg'}
+                      alt={module.title}
+                      fill
+                      className='object-cover transition-transform duration-500 group-hover:scale-105'
+                    />
+                    <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
+                    <h3 className='absolute bottom-4 left-6 text-2xl font-bold text-white'>
+                      {module.title}
+                    </h3>
+                  </div>
+                  <CardContent className='p-6'>
+                    <p className='text-muted-foreground mb-4'>
+                      {module.description}
+                    </p>
+                    <ul className='space-y-2'>
+                      {module.features.map((feature, idx) => (
+                        <li key={idx} className='flex items-center gap-2'>
+                          <CheckCircle2
+                            className='h-4 w-4 shrink-0'
+                            style={{ color: accentColor }}
+                          />
+                          <span className='text-foreground text-sm'>
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits Section */}
+        <section className='bg-muted/50 py-20 md:py-28'>
+          <div className='container mx-auto px-4'>
+            <div className='mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2'>
+              <div>
+                <span
+                  className='mb-4 inline-block rounded-full px-4 py-1.5 text-sm font-semibold'
+                  style={{
+                    backgroundColor: accentColor + '20',
+                    color: accentColor,
+                  }}
+                >
+                  Por que participar?
+                </span>
+                <h2 className='text-foreground mb-6 text-3xl font-bold text-balance md:text-4xl'>
+                  Benefícios para o Desenvolvimento
+                </h2>
+                <p className='text-muted-foreground mb-8 text-lg'>
+                  Nossas aulas vão além do ensino técnico, promovendo o
+                  desenvolvimento integral da criança.
+                </p>
+                <ul className='space-y-4'>
+                  {benefits.map((benefit, index) => (
+                    <li key={index} className='flex items-start gap-3'>
+                      <div
+                        className='mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full'
+                        style={{ backgroundColor: accentColor }}
+                      >
+                        <CheckCircle2 className='h-4 w-4 text-white' />
+                      </div>
+                      <span className='text-foreground'>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className='relative'>
+                <div
+                  className='absolute -inset-4 rounded-3xl opacity-20'
+                  style={{ backgroundColor: accentColor }}
+                />
+                <div className='bg-card relative rounded-2xl p-8 shadow-xl'>
+                  <h3 className='text-foreground mb-2 text-2xl font-bold'>
+                    Vagas Limitadas
+                  </h3>
+                  <p className='text-muted-foreground mb-6'>
+                    Garanta sua vaga e faça parte dessa transformação
+                  </p>
+                  <div className='mb-6 space-y-4'>
+                    <div className='border-border flex items-center justify-between border-b pb-4'>
+                      <span className='text-muted-foreground'>
+                        Idade mínima
+                      </span>
+                      <span className='text-foreground font-semibold'>
+                        7 anos
+                      </span>
+                    </div>
+                    <div className='border-border flex items-center justify-between border-b pb-4'>
+                      <span className='text-muted-foreground'>
+                        Vagas por turma
+                      </span>
+                      <span className='text-foreground font-semibold'>
+                        15 alunos
+                      </span>
+                    </div>
+                    <div className='border-border flex items-center justify-between border-b pb-4'>
+                      <span className='text-muted-foreground'>Material</span>
+                      <span className='text-foreground font-semibold'>
+                        Incluso
+                      </span>
+                    </div>
+                    <div className='flex items-center justify-between'>
+                      <span className='text-muted-foreground'>
+                        Investimento
+                      </span>
+                      <span
+                        className='text-foreground font-semibold'
+                        style={{ color: accentColor }}
+                      >
+                        Gratuito
+                      </span>
+                    </div>
+                  </div>
+                  <Button
+                    asChild
+                    size='lg'
+                    className='w-full rounded-full text-white'
+                    style={{ backgroundColor: accentColor }}
+                  >
+                    <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
+                      Fazer Matrícula
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA / Enrollment Section */}
-      {/* <section
+        {/* CTA / Enrollment Section */}
+        {/* <section
         id='matricula'
         className='relative overflow-hidden py-20 md:py-28'
       >
@@ -469,21 +423,22 @@ export function ProgramsPageTemplate({
         </div>
       </section> */}
 
-      {/* Footer */}
-      <footer className='border-border border-t py-8'>
-        <div className='container mx-auto px-4 text-center'>
-          <p className='text-muted-foreground'>
-            ADRAP - Associação das Ruas ao Palácio | Transformando vidas através
-            da cultura
-          </p>
-          <Link
-            href='/'
-            className='text-primary mt-2 inline-block hover:underline'
-          >
-            Voltar ao site principal
-          </Link>
-        </div>
-      </footer>
-    </main>
+        {/* Footer */}
+        <section className='border-border border-t py-8'>
+          <div className='container mx-auto px-4 text-center'>
+            <p className='text-muted-foreground'>
+              ADRAP - Associação das Ruas ao Palácio | Transformando vidas
+              através da cultura
+            </p>
+            <Link
+              href='/'
+              className='text-primary mt-2 inline-block hover:underline'
+            >
+              Voltar ao site principal
+            </Link>
+          </div>
+        </section>
+      </main>
+    </div>
   )
 }
