@@ -45,7 +45,7 @@ const volunteers = [
   },
 ]
 
-export default function Volunteers() {
+export default function VolunteersBKP() {
   return (
     <section id='voluntarios' className='bg-background py-24'>
       <div className='container mx-auto px-4'>

@@ -5,7 +5,7 @@ import LeiRouanet from '@/components/Lei-Rouanet'
 import Mission from '@/components/Mission'
 import Programs from '@/components/Programs'
 import SocialImpact from '@/components/Social-Impact'
-import Volunteers from '@/components/Volunteers'
+import Volunteers from '@/components/Volunters'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
