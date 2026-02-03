@@ -16,8 +16,9 @@ export const metadata: Metadata = {
     google: 'google',
     yandex: 'yandex',
     yahoo: 'yahoo',
+    me: ['associacaoadrap@gmail.com', 'https://adrap.ong.br'],
     other: {
-      me: ['associacaoadrap@gmail.com', 'https://adrap.ong.br'],
+      bing: 'Bing',
     },
   },
   robots: {
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: '/apple-touch-icon.png',
-    shortcut: ['/leticiamartins-icon.png'],
+    shortcut: ['/logo.png'],
     other: [
       {
         rel: '/android-chrome-192x192.png',
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   assets: ['https://www.adrap.ong.br/images'],
-  category: 'Nonprofit',
+  category: 'ONG',
   pinterest: {
     richPin: true,
   },
