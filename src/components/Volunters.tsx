@@ -69,7 +69,7 @@ export default function Volunters() {
             direction: 'ltr',
           }}
         />
-        <EmblaCarousel
+        {/* <EmblaCarousel
           slides={volunteers}
           reverse={true}
           Options={{
@@ -78,7 +78,7 @@ export default function Volunters() {
             align: 'start',
             direction: 'ltr',
           }}
-        />
+        /> */}
       </div>
     </section>
   )
