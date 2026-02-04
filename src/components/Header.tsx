@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <section
       id='inicio'
-      className='relative flex min-h-screen items-center overflow-hidden pt-0'
+      className='relative flex min-h-screen overflow-hidden pt-20'
     >
       {/* Imagem de background */}
       <div className='absolute inset-0 z-0'>

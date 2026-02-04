@@ -55,38 +55,37 @@ export default function Programs() {
           {programs.map((program, index) => (
             <Card
               key={index}
-              className='bg-card group overflow-hidden border-0 shadow-lg transition-all duration-300 hover:shadow-xl'
+              className='bg-card group overflow-hidden border-0 py-0 shadow-lg transition-all duration-300 hover:shadow-xl'
             >
-              <div className='relative h-64 overflow-hidden'>
-                <Image
-                  src={program.image || '/placeholder.svg'}
-                  alt={program.title}
-                  fill
-                  sizes='(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw'
-                  className='object-cover transition-transform duration-500 group-hover:scale-110'
-                />
-                <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
-                <div
-                  className={`absolute bottom-4 left-4 h-14 w-14 ${program.color} flex items-center justify-center rounded-xl`}
-                >
-                  <program.icon className='text-primary-foreground h-7 w-7' />
+              <Link href={program.href}>
+                <div className='relative h-64 overflow-hidden'>
+                  <Image
+                    src={program.image || '/placeholder.svg'}
+                    alt={program.title}
+                    fill
+                    sizes='(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw'
+                    className='object-cover transition-transform duration-500 group-hover:scale-110'
+                  />
+                  <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
+                  <div
+                    className={`absolute bottom-4 left-4 h-14 w-14 ${program.color} flex items-center justify-center rounded-xl`}
+                  >
+                    <program.icon className='text-primary-foreground h-7 w-7' />
+                  </div>
                 </div>
-              </div>
-              <CardContent className='p-6'>
-                <h3 className='text-foreground mb-3 text-xl font-bold'>
-                  {program.title}
-                </h3>
-                <p className='text-muted-foreground mb-4'>
-                  {program.description}
-                </p>
-                <Link
-                  href={program.href}
-                  className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'
-                >
-                  Ver mais
-                  <ArrowRight className='h-4 w-4' />
-                </Link>
-              </CardContent>
+                <CardContent className='p-6'>
+                  <h3 className='text-foreground mb-3 text-xl font-bold'>
+                    {program.title}
+                  </h3>
+                  <p className='text-muted-foreground mb-4'>
+                    {program.description}
+                  </p>
+                  <span className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'>
+                    Ver mais
+                    <ArrowRight className='h-4 w-4' />
+                  </span>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>

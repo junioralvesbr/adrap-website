@@ -1,14 +1,7 @@
 'use client'
 
-import { Heart, Home, Music, Users } from 'lucide-react'
+import { stats } from '@/config/stats'
 import { useEffect, useRef, useState } from 'react'
-
-const stats = [
-  { icon: Music, value: 5000, suffix: '+', label: 'Instrumentos musicais' },
-  { icon: Users, value: 120, suffix: '+', label: 'Crianças atendidas' },
-  { icon: Heart, value: 300, suffix: '+', label: 'Voluntários mobilizados' },
-  { icon: Home, value: 50, suffix: '+', label: 'Famílias impactadas' },
-]
 
 function AnimatedCounter({
   target,

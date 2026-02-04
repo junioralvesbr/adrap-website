@@ -10,7 +10,7 @@ const involvementOptions = [
     description:
       'Com o seu apoio, podemos fornecer material de apoio, manter o centro de aprendizagem, capacitar professores e abrir portas para crianças carentes. Mesmo uma pequena contribuição pode fazer uma grande diferença.',
     color: 'bg-primary',
-    href: NAVIGATION_LINKS.DOAR,
+    href: NAVIGATION_LINKS.PROGRAMAS,
   },
   {
     icon: Megaphone,
@@ -53,26 +53,25 @@ export default function GetInvolved() {
               key={index}
               className='bg-card group overflow-hidden border-0 shadow-lg transition-all duration-300 hover:shadow-xl'
             >
-              <CardContent className='p-8'>
-                <div
-                  className={`h-16 w-16 ${option.color} mb-6 flex items-center justify-center rounded-2xl transition-transform group-hover:scale-110`}
-                >
-                  <option.icon className='text-primary-foreground h-8 w-8' />
-                </div>
-                <h3 className='text-foreground mb-4 text-2xl font-bold'>
-                  {option.title}
-                </h3>
-                <p className='text-muted-foreground mb-6 leading-relaxed'>
-                  {option.description}
-                </p>
-                <Link
-                  href={option.href}
-                  className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'
-                >
-                  Saiba mais
-                  <ArrowRight className='h-4 w-4' />
-                </Link>
-              </CardContent>
+              <Link href={option.href}>
+                <CardContent className='p-8'>
+                  <div
+                    className={`h-16 w-16 ${option.color} mb-6 flex items-center justify-center rounded-2xl transition-transform group-hover:scale-110`}
+                  >
+                    <option.icon className='text-primary-foreground h-8 w-8' />
+                  </div>
+                  <h3 className='text-foreground mb-4 text-2xl font-bold'>
+                    {option.title}
+                  </h3>
+                  <p className='text-muted-foreground mb-6 leading-relaxed'>
+                    {option.description}
+                  </p>
+                  <span className='text-primary inline-flex items-center gap-2 font-semibold transition-all hover:gap-3'>
+                    Saiba mais
+                    <ArrowRight className='h-4 w-4' />
+                  </span>
+                </CardContent>
+              </Link>
             </Card>
           ))}
         </div>
