@@ -3,6 +3,7 @@ import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import DonationModal from './donation-modal'
 
 export default function Header() {
   return (
@@ -45,16 +46,12 @@ export default function Header() {
           </p>
 
           <div className='flex flex-col gap-4 sm:flex-row'>
-            <Button
-              size='lg'
-              asChild
-              className='bg-primary hover:bg-primary/90 text-primary-foreground h-12 rounded-full px-8 text-base font-semibold'
-            >
-              <Link href={NAVIGATION_LINKS.DOAR}>
+            <DonationModal>
+              <Button className='bg-primary hover:bg-primary/90 text-primary-foreground h-12 cursor-pointer rounded-full px-8 text-base font-semibold'>
                 Doe Agora
                 <ArrowRight className='ml-2 h-5 w-5' />
-              </Link>
-            </Button>
+              </Button>
+            </DonationModal>
 
             <Button
               size='lg'

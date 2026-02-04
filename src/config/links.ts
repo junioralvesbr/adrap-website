@@ -15,8 +15,6 @@ export const NAVIGATION_LINKS = {
   VOLUNTARIOS: '/#voluntarios',
   EVENTOS: '/#eventos',
   CONTATO: '/#contato',
-  DOAR: '#doar',
-  CAMPANHAS: '#campanhas',
 } as const
 
 // URLs de redes sociais

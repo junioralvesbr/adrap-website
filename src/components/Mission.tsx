@@ -38,9 +38,9 @@ export default function Mission() {
               <Button
                 asChild
                 size='lg'
-                className='bg-primary hover:bg-primary/90 text-primary-foreground h-14 rounded-full px-8'
+                className='bg-primary hover:bg-primary/90 text-primary-foreground h-14 cursor-pointer rounded-full px-8'
               >
-                <Link href={NAVIGATION_LINKS.DOAR}>Doe Agora</Link>
+                <span>Doe Agora</span>
               </Button>
             </DonationModal>
             <Button

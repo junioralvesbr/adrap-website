@@ -5,15 +5,24 @@ import {
   PROGRAM_LINKS,
   SOCIAL_LINKS,
 } from '@/config/links'
-import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react'
+import {
+  ArrowRight,
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Youtube,
+} from 'lucide-react'
 import Link from 'next/link'
+import DonationModal from './donation-modal'
+import { Button } from './ui/button'
 
 const quickLinks = [
   { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
   { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
   { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
-  // { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
-  { href: NAVIGATION_LINKS.DOAR, label: 'Doe Agora' },
+  { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
 ]
 
 const programs = [
@@ -139,6 +148,14 @@ export default function Footer() {
                 >
                   {CONTACT_LINKS.EMAIL}
                 </a>
+              </li>
+              <li className='hidden items-center gap-4 lg:flex'>
+                <DonationModal>
+                  <Button className='bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer rounded-full px-6'>
+                    Faça a sua Doação
+                    <ArrowRight className='ml-2 h-5 w-5' />
+                  </Button>
+                </DonationModal>
               </li>
             </ul>
           </div>
