@@ -27,95 +27,71 @@ export default function LeiRouanet() {
 
           {/* Logo Grid - Lei de Incentivo à Cultura always first (left) */}
           <div className='flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16'>
-            {/* Lei de Incentivo à Cultura - Always first per manual guidelines */}
-            <div className='shrink-0'>
-              <Image
-                src='/images/rouanet/incentivo-cultura.png'
-                alt='Lei de Incentivo à Cultura - Lei Rouanet'
-                width={180}
-                height={120}
-                className='h-20 w-auto object-contain md:h-24'
-              />
+            <div>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase'>
+                Apoio
+              </p>
+
+              {/* Lei de Incentivo à Cultura - Always first per manual guidelines */}
+              <div className='shrink-0'>
+                <Image
+                  src='/images/rouanet/incentivo-cultura.png'
+                  alt='Lei de Incentivo à Cultura - Lei Rouanet'
+                  width={180}
+                  height={120}
+                  className='h-20 w-auto object-contain md:h-24'
+                />
+              </div>
             </div>
 
             {/* Divider */}
             <div className='bg-border hidden h-16 w-px md:block' />
 
-            {/* Ministério da Cultura + Governo do Brasil */}
-            <div className='shrink-0'>
-              <Image
-                src='/images/rouanet/ministerio-cultura.png'
-                alt='Ministério da Cultura - Governo do Brasil'
-                width={400}
-                height={100}
-                className='h-16 w-auto object-contain md:h-20'
-              />
-            </div>
-          </div>
+            <div>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase'>
+                Patrocinio
+              </p>
 
-          {/* Separator */}
-          <div className='border-border my-10 border-t' />
-
-          {/* Patrocinadores */}
-          <div className='mb-8 text-center'>
-            <span className='text-muted-foreground text-sm font-medium tracking-wider uppercase'>
-              Patrocinio
-            </span>
-          </div>
-
-          <div className='flex flex-wrap items-center justify-center gap-10 md:gap-16'>
-            {/* Itaipu Binacional */}
-            <div className='shrink-0'>
-              <Image
-                src='/images/rouanet/CPA.png'
-                alt='CPA'
-                width={280}
-                height={100}
-                className='h-16 w-auto object-contain md:h-20'
-              />
-            </div>
-
-            {/* CPA 25 Anos */}
-            <div className='shrink-0'>
-              <Image
-                src='/images/rouanet/usacucar.png'
-                alt='Usacucar usina santa terezinha'
-                width={200}
-                height={100}
-                className='h-14 w-auto object-contain md:h-18'
-              />
-            </div>
-          </div>
-
-          {/* Separator */}
-          <div className='border-border my-10 border-t' />
-
-          {/* Realizacao */}
-          <div className='mb-8 text-center'>
-            <span className='text-muted-foreground text-sm font-medium tracking-wider uppercase'>
-              Realizacao
-            </span>
-          </div>
-
-          <div className='flex items-center justify-center'>
-            {/* ADRAP Logo/Name */}
-            <div className='text-center'>
-              <div className='inline-flex items-center gap-3'>
-                <Image
-                  src='/logo.png'
-                  alt='Usacucar usina santa terezinha'
-                  width={200}
-                  height={100}
-                  className='h-14 w-auto object-contain md:h-18'
-                />
-                <div className='text-left'>
-                  <span className='text-foreground text-xl font-bold'>
-                    ADRAP
-                  </span>
-                  <p className='text-muted-foreground text-sm'>
-                    Associacao das Ruas ao Palacio
-                  </p>
+              <div className='flex flex-wrap items-center justify-center gap-10 md:gap-16'>
+                {/* CPA */}
+                <div className='shrink-0'>
+                  <Image
+                    src='/images/rouanet/CPA.png'
+                    alt='CPA'
+                    width={280}
+                    height={100}
+                    className='h-16 w-auto object-contain'
+                  />
                 </div>
+
+                {/* Usina Santa Teresinha */}
+                <div className='shrink-0'>
+                  <Image
+                    src='/images/rouanet/usacucar.png'
+                    alt='Usacucar usina santa terezinha'
+                    width={200}
+                    height={100}
+                    className='h-14 w-auto object-contain'
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Divider */}
+            <div className='bg-border hidden h-16 w-px md:block' />
+            <div>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase'>
+                Realização
+              </p>
+              {/* Ministério da Cultura + Governo do Brasil */}
+              <div className='mt-4 shrink-0'>
+                <Image
+                  src='/images/rouanet/ministerio-cultura.png'
+                  alt='Ministério da Cultura - Governo do Brasil'
+                  width={400}
+                  height={100}
+                  className='h-16 w-auto object-contain md:h-20'
+                />
               </div>
             </div>
           </div>
