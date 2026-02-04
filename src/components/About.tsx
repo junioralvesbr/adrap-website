@@ -5,10 +5,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const features = [
-  'Aulas de música: violão, teclado, guitarra e coral',
-  'Cursos de pintura e artes visuais',
+  'Aulas de música: violão, teclado, Bateria e musicalização infantil',
+  'Cursos de pintura, desenho cartoon e artesanato',
   'Aulas de dança e expressão corporal',
-  'Apoio educacional e desenvolvimento pessoal',
+  'Aulas de inglês, apoio educacional e desenvolvimento pessoal',
 ]
 
 export default function About() {

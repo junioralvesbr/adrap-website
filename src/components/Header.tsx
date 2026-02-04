@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <section
       id='inicio'
-      className='relative flex min-h-screen items-center overflow-hidden pt-20'
+      className='relative flex min-h-screen items-center overflow-hidden pt-0'
     >
       {/* Imagem de background */}
       <div className='absolute inset-0 z-0'>
@@ -69,7 +69,7 @@ export default function Header() {
             </Button>
           </div>
 
-          <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0'>
+          <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0 sm:gap-12'>
             <div className='flex-1 sm:flex-0'>
               <p className='text-accent text-3xl font-bold'>120+</p>
               <p className='text-card/70 text-sm'>Crianças atendidas</p>

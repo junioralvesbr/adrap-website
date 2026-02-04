@@ -18,8 +18,8 @@ import { useState } from 'react'
 
 const ADRAP_INFO = {
   razaoSocial: 'ADRAP - Associação das Ruas ao Palácio',
-  cnpj: '00.000.000/0000-00',
-  chavePix: '00000000000000',
+  cnpj: '43.556.012/0001-00',
+  chavePix: '43.556.012/0001-00',
 }
 
 export default function DonationModal({
