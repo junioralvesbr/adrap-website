@@ -13,7 +13,8 @@ import {
 } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
 // import { Input } from "@/components/ui/input"
-import { Building2, Check, Copy, FileText, Heart, QrCode } from 'lucide-react'
+import { Building2, Check, Copy, FileText, Heart } from 'lucide-react'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const ADRAP_INFO = {
@@ -86,21 +87,12 @@ export default function DonationModal({
             <div className='bg-card border-border rounded-2xl border-2 p-4 shadow-sm md:p-6'>
               <div className='bg-muted relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-xl md:h-56 md:w-56'>
                 {/* QR Code placeholder - em produção, usar biblioteca como qrcode.react */}
-                <div className='absolute inset-4 grid grid-cols-7 grid-rows-7 gap-1'>
-                  {Array.from({ length: 49 }).map((_, i) => {
-                    return (
-                      <div
-                        key={i}
-                        className='bg-foreground rounded-sm transition-colors'
-                      />
-                    )
-                  })}
-                </div>
-                <div className='absolute inset-0 flex items-center justify-center'>
-                  <div className='bg-card rounded-lg p-2 shadow-sm'>
-                    <QrCode className='text-primary h-8 w-8' />
-                  </div>
-                </div>
+                <Image
+                  src='/images/qr-code.jpeg'
+                  alt='QR Code'
+                  fill
+                  className='object-cover'
+                />
               </div>
             </div>
             <p className='text-muted-foreground mt-3 text-center text-sm'>
