@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { NAVIGATION_LINKS } from '@/config/links'
+import { stats } from '@/config/stats'
 import { ArrowRight, Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -68,16 +69,16 @@ export default function Header() {
 
           <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0 sm:gap-12'>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>120+</p>
-              <p className='text-card/70 text-sm'>Crianças atendidas</p>
+              <p className='text-accent text-3xl font-bold'>{stats[1].value}</p>
+              <p className='text-card/70 text-sm'>{stats[1].label}</p>
             </div>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>300+</p>
-              <p className='text-card/70 text-sm'>Voluntários</p>
+              <p className='text-accent text-3xl font-bold'>{stats[2].value}</p>
+              <p className='text-card/70 text-sm'>{stats[2].label}</p>
             </div>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>50+</p>
-              <p className='text-card/70 text-sm'>Famílias impactadas</p>
+              <p className='text-accent text-3xl font-bold'>{stats[3].value}</p>
+              <p className='text-card/70 text-sm'>{stats[3].label}</p>
             </div>
           </div>
         </div>
