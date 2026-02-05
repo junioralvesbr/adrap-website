@@ -21,7 +21,7 @@ export default function GetInvolved() {
           </p>
         </div>
 
-        <article className='grid gap-8 md:grid-cols-3'>
+        <section className='grid gap-8 md:grid-cols-3'>
           <Card className='bg-card group cursor-pointer overflow-hidden border-0 shadow-lg transition-all duration-300 hover:shadow-xl'>
             <DonationModal>
               <CardContent className='p-8'>
@@ -89,7 +89,7 @@ export default function GetInvolved() {
               </CardContent>
             </Link>
           </Card>
-        </article>
+        </section>
       </div>
     </section>
   )
