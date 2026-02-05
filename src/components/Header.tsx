@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
+import { atendimentos } from '@/config/atendimentos'
 import { NAVIGATION_LINKS } from '@/config/links'
-import { stats } from '@/config/stats'
 import { ArrowRight, Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -69,16 +69,22 @@ export default function Header() {
 
           <div className='border-card/20 mt-12 mb-12 flex gap-8 border-t pt-8 sm:mb-0 sm:gap-12'>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>{stats[1].value}</p>
-              <p className='text-card/70 text-sm'>{stats[1].label}</p>
+              <p className='text-accent text-3xl font-bold'>
+                {atendimentos[1].value}
+              </p>
+              <p className='text-card/70 text-sm'>{atendimentos[1].label}</p>
             </div>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>{stats[2].value}</p>
-              <p className='text-card/70 text-sm'>{stats[2].label}</p>
+              <p className='text-accent text-3xl font-bold'>
+                {atendimentos[2].value}
+              </p>
+              <p className='text-card/70 text-sm'>{atendimentos[2].label}</p>
             </div>
             <div className='flex-1 sm:flex-0'>
-              <p className='text-accent text-3xl font-bold'>{stats[3].value}</p>
-              <p className='text-card/70 text-sm'>{stats[3].label}</p>
+              <p className='text-accent text-3xl font-bold'>
+                {atendimentos[3].value}
+              </p>
+              <p className='text-card/70 text-sm'>{atendimentos[3].label}</p>
             </div>
           </div>
         </div>

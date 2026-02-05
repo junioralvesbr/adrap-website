@@ -1,6 +1,6 @@
 'use client'
 
-import { stats } from '@/config/stats'
+import { atendimentos } from '@/config/atendimentos'
 import { useEffect, useRef, useState } from 'react'
 
 function AnimatedCounter({
@@ -72,7 +72,7 @@ export default function SocialImpact() {
         </div>
 
         <div className='grid grid-cols-2 gap-8 md:grid-cols-4'>
-          {stats.map((stat, index) => (
+          {atendimentos.map((stat, index) => (
             <div key={index} className='group text-center'>
               <div className='bg-primary/10 group-hover:bg-primary mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110'>
                 <stat.icon className='text-primary group-hover:text-primary-foreground h-10 w-10 transition-colors' />
