@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { NAVIGATION_LINKS } from '@/config/links'
+import { CONTACT_LINKS } from '@/config/links'
 import Image from 'next/image'
 import Link from 'next/link'
 import DonationModal from './donation-modal'
@@ -49,18 +49,10 @@ export default function Mission() {
               variant='outline'
               className='border-card/30 text-card hover:bg-card/10 hover:text-accent h-14 rounded-full bg-transparent px-8'
             >
-              <Link href={NAVIGATION_LINKS.VOLUNTARIOS}>
+              <Link href={CONTACT_LINKS.WHATSAPP} target='_blank'>
                 Seja um Voluntário
               </Link>
             </Button>
-            {/* <Button
-              asChild
-              size='lg'
-              variant='outline'
-              className='border-card/30 text-card hover:bg-card/10 h-14 rounded-full bg-transparent px-8'
-            >
-              <Link href={NAVIGATION_LINKS.CAMPANHAS}>Apoie uma Campanha</Link>
-            </Button> */}
           </div>
         </div>
       </div>
