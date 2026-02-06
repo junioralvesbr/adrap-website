@@ -62,6 +62,15 @@ export default function Partners() {
                 className='object-contain'
               />
             </div>
+
+            <div className='relative h-34 w-34'>
+              <Image
+                src='/images/parceiros/cnbb.png'
+                alt='Logo Cnbb'
+                fill
+                className='object-contain'
+              />
+            </div>
           </div>
         </div>
       </div>
