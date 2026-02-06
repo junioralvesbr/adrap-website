@@ -20,9 +20,9 @@ export const NAVIGATION_LINKS = {
 
 // URLs de redes sociais
 export const SOCIAL_LINKS = {
-  FACEBOOK: 'https://facebook.com',
-  INSTAGRAM: 'https://instagram.com',
-  YOUTUBE: 'https://youtube.com',
+  FACEBOOK: 'https://www.facebook.com/profile.php?id=100068680246673',
+  INSTAGRAM: 'https://www.instagram.com/adrap.ong/',
+  YOUTUBE: 'https://www.youtube.com/@AssociacaoADRAP',
 } as const
 
 // URLs de contato

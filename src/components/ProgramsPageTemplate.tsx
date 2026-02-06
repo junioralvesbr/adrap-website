@@ -74,16 +74,18 @@ export function ProgramsPageTemplate({
               <Button
                 asChild
                 size='lg'
-                className='rounded-full px-8 text-white'
+                className='cursor-pointer rounded-full px-8 text-white'
                 style={{ backgroundColor: accentColor }}
               >
-                <a href='#matricula'>Matricule-se Agora</a>
+                <a href={CONTACT_LINKS.WHATSAPP} target='_blank'>
+                  Matricule-se Agora
+                </a>
               </Button>
               <Button
                 asChild
                 size='lg'
                 variant='outline'
-                className='rounded-full border-white/30 bg-white/10 px-8 text-white hover:bg-white/20 hover:text-white'
+                className='cursor-pointer rounded-full border-white/30 bg-white/10 px-8 text-white hover:bg-white/20 hover:text-white'
               >
                 <a href='#modalidades'>Ver Modalidades</a>
               </Button>

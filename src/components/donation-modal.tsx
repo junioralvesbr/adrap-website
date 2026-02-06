@@ -13,7 +13,7 @@ import {
 } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
 // import { Input } from "@/components/ui/input"
-import { Building2, Check, Copy, FileText, Heart } from 'lucide-react'
+import { Building2, Check, Copy, FileText, Heart, X } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -44,7 +44,18 @@ export default function DonationModal({
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
 
-      <DialogContent className='max-h-[95vh] w-[95vw] gap-0 overflow-y-auto border-0 p-0 sm:max-w-lg md:max-w-xl lg:max-w-2xl'>
+      <DialogContent
+        className='max-h-[95vh] w-[95vw] gap-0 overflow-y-auto border-0 p-0 sm:max-w-lg md:max-w-xl lg:max-w-2xl'
+        showCloseButton={false}
+      >
+        <DialogClose asChild>
+          <Button
+            size='icon'
+            className='text-muted hover:text-muted/50 absolute top-4 right-4 z-10 cursor-pointer'
+          >
+            <X className='size-7' />
+          </Button>
+        </DialogClose>
         <DialogHeader className='bg-primary text-primary-foreground p-6 md:p-8'>
           <DialogTitle className='flex items-center justify-center gap-3 text-center text-xl font-bold md:text-3xl'>
             <Heart className='h-8 w-8 fill-current' />
@@ -114,7 +125,7 @@ export default function DonationModal({
                 size='sm'
                 onClick={handleCopyPix}
                 className={cn(
-                  'shrink-0 gap-2 transition-all',
+                  'shrink-0 cursor-pointer gap-2 transition-all',
                   copied && 'bg-primary text-primary-foreground border-primary'
                 )}
               >
@@ -146,7 +157,11 @@ export default function DonationModal({
 
         <DialogFooter className='py-4 sm:justify-center'>
           <DialogClose asChild>
-            <Button variant='outline' size='lg' className='mx-auto max-w-56'>
+            <Button
+              variant='outline'
+              size='lg'
+              className='mx-auto max-w-56 cursor-pointer'
+            >
               Fechar
             </Button>
           </DialogClose>
