@@ -18,7 +18,7 @@ export default function Partners() {
 
         <div className='rounded-2xl bg-white p-8 shadow-xl md:p-12'>
           <div className='flex flex-wrap items-center justify-around gap-8 md:gap-12 lg:gap-16'>
-            <div className='relative h-36 w-36'>
+            <div className='relative h-28 w-28'>
               <Image
                 src='/images/parceiros/cooper.jpg'
                 alt='Logo Cooper'
@@ -27,7 +27,7 @@ export default function Partners() {
               />
             </div>
 
-            <div className='relative h-36 w-36'>
+            <div className='relative h-28 w-28'>
               <Image
                 src='/images/parceiros/cawahisa.jpg'
                 alt='Logo Cawahisa'
@@ -36,7 +36,7 @@ export default function Partners() {
               />
             </div>
 
-            <div className='relative h-44 w-36'>
+            <div className='relative h-36 w-36'>
               <Image
                 src='/images/parceiros/olhos.jpg'
                 alt='Logo clinica de olhos'
@@ -45,7 +45,7 @@ export default function Partners() {
               />
             </div>
 
-            <div className='relative h-32 w-36'>
+            <div className='relative h-28 w-28'>
               <Image
                 src='/images/parceiros/itaipu.png'
                 alt='Logo Itaipu'
@@ -54,7 +54,7 @@ export default function Partners() {
               />
             </div>
 
-            <div className='relative h-28 w-36'>
+            <div className='relative h-28 w-28'>
               <Image
                 src='/images/parceiros/criarkits.png'
                 alt='Logo Criarkits'
