@@ -36,7 +36,7 @@ export default function LeiRouanet() {
                 className='object-contain'
               />
 
-              <p className='text-muted-foreground text-sm font-bold tracking-wider uppercase'>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
                 Apoio
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function LeiRouanet() {
                 className='object-contain'
               />
 
-              <p className='text-muted-foreground text-sm font-bold tracking-wider uppercase'>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
                 Patrocinio
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function LeiRouanet() {
                 fill
                 className='object-contain'
               />
-              <p className='text-muted-foreground text-sm font-bold tracking-wider uppercase'>
+              <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
                 Realização
               </p>
             </div>
