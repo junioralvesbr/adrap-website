@@ -13,6 +13,7 @@ export const NAVIGATION_LINKS = {
   PROGRAMAS: '/#programas',
   IMPACTO: '/#impacto',
   VOLUNTARIOS: '/#voluntarios',
+  PARCEIROS: '/#parceiros',
   EVENTOS: '/#eventos',
   CONTATO: '/#contato',
 } as const

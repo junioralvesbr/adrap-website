@@ -103,7 +103,7 @@ export default function DonationModal({
           {/* Chave PIX */}
           <div className='space-y-2'>
             <p className='text-muted-foreground text-center text-sm font-medium'>
-              Ou copie a chave PIX
+              Ou copie a chave PIX (CNPJ: {ADRAP_INFO.cnpj})
             </p>
             <div className='bg-muted flex items-center gap-2 rounded-xl p-3 md:p-4'>
               <code className='text-foreground flex-1 text-center font-mono text-sm break-all md:text-base'>
@@ -146,7 +146,9 @@ export default function DonationModal({
 
         <DialogFooter className='py-4 sm:justify-center'>
           <DialogClose asChild>
-            <Button variant='outline'>Fechar</Button>
+            <Button variant='outline' size='lg' className='mx-auto max-w-56'>
+              Fechar
+            </Button>
           </DialogClose>
         </DialogFooter>
       </DialogContent>

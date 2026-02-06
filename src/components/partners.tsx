@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Partners() {
   return (
-    <section id='apoiadores' className='bg-muted/50 py-16 md:py-24'>
+    <section id='parceiros' className='bg-muted/50 py-16'>
       <div className='container mx-auto px-4'>
         {/* Header */}
         <div className='mb-12 text-center'>
@@ -10,56 +10,56 @@ export default function Partners() {
             Nossos Parceiros
           </h2>
           <p className='text-muted-foreground mx-auto mt-4 max-w-2xl'>
-            Seja um parceiro e ajude a transformar vidas.
+            Nosso projeto é mantido por anjos que acreditam que as crianças é o
+            futuro de nossa sociedade e por isso não medem esforços para nos
+            ajudar a manter nossa estrutura e nossos professores.
           </p>
         </div>
 
-        {/* Sponsor Logos Block - Following Lei Rouanet Manual Guidelines */}
-        <div className='rounded-2xl p-8 md:p-12'>
-          <div className='flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16'>
-            {/* Lei de Incentivo à Cultura - Always first per manual guidelines */}
-            <div className='shrink-0'>
+        <div className='rounded-2xl bg-white p-8 shadow-xl md:p-12'>
+          <div className='flex flex-wrap items-center justify-around gap-8 md:gap-12 lg:gap-16'>
+            <div className='relative h-36 w-36 flex-1'>
               <Image
-                src='/images/parceiros/cooper.png'
+                src='/images/parceiros/cooper.jpg'
                 alt='Logo Cooper'
-                width={180}
-                height={120}
-                className='h-20 w-auto object-contain md:h-24'
+                fill
+                className='object-contain'
               />
             </div>
 
-            <div className='flex flex-wrap items-center justify-center gap-10 md:gap-16'>
-              {/* CPA */}
-              <div className='shrink-0'>
-                <Image
-                  src='/images/parceiros/cawahisa-logo.png'
-                  alt='Logo Cawahisa'
-                  width={280}
-                  height={100}
-                  className='h-16 w-auto object-contain'
-                />
-              </div>
-
-              {/* Usina Santa Teresinha */}
-              <div className='shrink-0'>
-                <Image
-                  src='/images/parceiros/olhos.png'
-                  alt='Logo clinica de olhos'
-                  width={400}
-                  height={100}
-                  className='h-20 w-auto object-contain'
-                />
-              </div>
+            <div className='relative h-36 w-36 flex-1'>
+              <Image
+                src='/images/parceiros/cawahisa.jpg'
+                alt='Logo Cawahisa'
+                fill
+                className='object-contain'
+              />
             </div>
 
-            {/* Ministério da Cultura + Governo do Brasil */}
-            <div className='mt-4 shrink-0'>
+            <div className='relative h-44 w-36 flex-1'>
+              <Image
+                src='/images/parceiros/olhos.jpg'
+                alt='Logo clinica de olhos'
+                fill
+                className='object-contain'
+              />
+            </div>
+
+            <div className='relative h-32 w-36 flex-1'>
               <Image
                 src='/images/parceiros/itaipu.png'
                 alt='Logo Itaipu'
-                width={400}
-                height={100}
-                className='h-16 w-auto object-contain md:h-20'
+                fill
+                className='object-contain'
+              />
+            </div>
+
+            <div className='relative h-28 w-36 flex-1'>
+              <Image
+                src='/images/parceiros/criarkits.png'
+                alt='Logo Criarkits'
+                fill
+                className='object-contain'
               />
             </div>
           </div>

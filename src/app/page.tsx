@@ -3,6 +3,7 @@ import GetInvolved from '@/components/Get-Involved'
 import Header from '@/components/Header'
 import LeiRouanet from '@/components/Lei-Rouanet'
 import Mission from '@/components/Mission'
+import Partners from '@/components/partners'
 import Programs from '@/components/Programs'
 import SocialImpact from '@/components/Social-Impact'
 import Volunteers from '@/components/Volunters'
@@ -27,7 +28,7 @@ export default function Home() {
         <Programs />
         <SocialImpact />
         <Volunteers />
-        {/* <Partners /> */}
+        <Partners />
         <LeiRouanet />
       </main>
     </>

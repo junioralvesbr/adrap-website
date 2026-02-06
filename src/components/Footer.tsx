@@ -22,6 +22,7 @@ const quickLinks = [
   { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
   { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
   { href: NAVIGATION_LINKS.VOLUNTARIOS, label: 'Voluntários' },
+  { href: NAVIGATION_LINKS.PARCEIROS, label: 'Parceiros' },
   { href: NAVIGATION_LINKS.EVENTOS, label: 'Eventos' },
 ]
 
