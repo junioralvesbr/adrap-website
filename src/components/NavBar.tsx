@@ -9,7 +9,7 @@ import { useState } from 'react'
 import DonationModal from './donation-modal'
 
 const navLinks = [
-  { href: NAVIGATION_LINKS.INICIO, label: 'Início' },
+  { href: NAVIGATION_LINKS.HOME, label: 'Home' },
   { href: NAVIGATION_LINKS.SOBRE, label: 'Quem Somos' },
   { href: NAVIGATION_LINKS.PROGRAMAS, label: 'Programas' },
   { href: NAVIGATION_LINKS.IMPACTO, label: 'Impacto' },
@@ -27,7 +27,7 @@ export default function NavBar() {
       <div className='container mx-auto px-4'>
         <div className='flex h-20 items-center justify-between'>
           <Link
-            href={NAVIGATION_LINKS.HOME}
+            href={NAVIGATION_LINKS.INICIO}
             className='flex items-center gap-3'
           >
             <div className='relative flex h-12 w-12 items-center justify-center rounded-full'>

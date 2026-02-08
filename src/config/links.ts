@@ -12,7 +12,7 @@ export const NAVIGATION_LINKS = {
   SOBRE: '/#sobre',
   PROGRAMAS: '/#programas',
   IMPACTO: '/#impacto',
-  VOLUNTARIOS: '/#voluntarios',
+  VOLUNTARIOS: '/voluntarios',
   PARCEIROS: '/#parceiros',
   EVENTOS: '/#eventos',
   CONTATO: '/#contato',
