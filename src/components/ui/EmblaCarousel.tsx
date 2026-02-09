@@ -4,7 +4,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import AutoScroll, { AutoScrollOptionsType } from 'embla-carousel-auto-scroll'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
-import { Card, CardContent } from './ui/card'
+import { Card, CardContent } from './card'
 
 interface Slide {
   image?: string
@@ -24,7 +24,7 @@ export default function EmblaCarousel({
   const [emblaRef] = useEmblaCarousel(Options, [
     AutoScroll({
       playOnInit: true,
-      speed: reverse ? -1 : 1,
+      speed: reverse ? -0.4 : 0.4,
       stopOnInteraction: false,
     } as AutoScrollOptionsType),
   ])

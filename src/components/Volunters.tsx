@@ -1,7 +1,7 @@
+import EmblaCarousel from '@/components/ui/EmblaCarousel'
 import { voluntarios } from '@/config/voluntarios'
 import { ArrowRightIcon } from 'lucide-react'
 import Link from 'next/link'
-import EmblaCarousel from './EmblaCarousel'
 
 export default function Volunters() {
   return (
