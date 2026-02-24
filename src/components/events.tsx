@@ -9,7 +9,7 @@ export function Events() {
   const events = getAllEvents().slice(0, 3)
 
   return (
-    <section id='eventos' className='bg-muted/50 py-24'>
+    <section id='eventos' className='bg-muted/90 py-24'>
       <div className='container mx-auto px-4'>
         <div className='mb-16 text-center'>
           <div className='bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-semibold'>
