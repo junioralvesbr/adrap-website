@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import { Events } from '@/components/events'
 import GetInvolved from '@/components/Get-Involved'
 import Header from '@/components/Header'
 import LeiRouanet from '@/components/Lei-Rouanet'
@@ -28,6 +29,7 @@ export default function Home() {
         <Programs />
         <SocialImpact />
         <Volunteers />
+        <Events />
         <Partners />
         <LeiRouanet />
       </main>
