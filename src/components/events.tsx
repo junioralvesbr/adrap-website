@@ -16,13 +16,13 @@ export function Events() {
             Agenda
           </div>
           <h2 className='text-foreground mb-4 text-3xl font-bold md:text-4xl lg:text-5xl'>
-            Eventos e Noticias
+            Eventos e Campanhas
           </h2>
           <p className='text-muted-foreground mx-auto max-w-2xl text-lg'>
-            Participe dos nossos eventos e campanhas !!
+            Participe dos nossos eventos !!
           </p>
           <p className='text-muted-foreground mx-auto max-w-2xl text-lg'>
-            fique por dentro e veja as noticias do nosso projeto.
+            fique por dentro e veja as novidades do nosso projeto.
           </p>
         </div>
 

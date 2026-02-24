@@ -30,7 +30,7 @@ export default function EventosPage() {
                 Agenda ADRAP
               </div>
               <h1 className='text-foreground mb-6 text-4xl font-bold text-balance md:text-5xl lg:text-6xl'>
-                Nossos Eventos
+                Eventos & Campanhas
               </h1>
               <p className='text-muted-foreground text-xl'>
                 Acompanhe todas as apresentações, campanhas, festivais e
