@@ -1,3 +1,4 @@
+import CampaignModal from '@/components/campaign-modal'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
@@ -78,6 +79,7 @@ export default function RootLayout({
   return (
     <html lang='pt-BR'>
       <body className={`${_poppins.variable} font-sans antialiased`}>
+        <CampaignModal />
         <NavBar />
         {children}
         <Footer />
