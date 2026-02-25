@@ -46,7 +46,7 @@ export default function ApoioEducacionalPage() {
       title='Apoio Educacional'
       subtitle='Programa de Apoio Educacional'
       description='Um programa completo que integra a expressão corporal da dança break, o ensino da língua inglesa e o apoio pedagógico, preparando jovens para os desafios do futuro com criatividade e conhecimento.'
-      heroImage='/images/programas/breakdance-class.jpg'
+      heroImage='/images/programas/educacao.jpg'
       accentColor='#9333ea'
       modules={Modules}
       schedule={{

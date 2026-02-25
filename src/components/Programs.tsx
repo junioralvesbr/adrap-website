@@ -19,7 +19,7 @@ const programs = [
     title: 'Aulas de Artes',
     description:
       'Aulas de pintura, desenho e artesanato para estimular a criatividade e expressão artística.',
-    image: '/images/programas/pintura.jpg',
+    image: '/images/programas/artesanato.jpg',
     color: 'bg-red-600',
     href: PROGRAM_LINKS.AULAS_ARTE,
   },
@@ -27,7 +27,7 @@ const programs = [
     icon: Disc,
     title: 'Apoio Educacional',
     description: 'Aulas de dança e inglês para desenvolvimento pessoal.',
-    image: '/images/programas/education.png',
+    image: '/images/programas/educacao.jpg',
     color: 'bg-purple-600',
     href: PROGRAM_LINKS.APOIO_EDUCACIONAL,
   },
