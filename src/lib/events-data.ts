@@ -9,7 +9,13 @@ export interface EventData {
     year: string
   }
   location: string
-  category: string
+  category:
+    | 'Apresentação'
+    | 'Festival'
+    | 'Workshop'
+    | 'Comemoração'
+    | 'Campanhas'
+    | 'Notícias'
   coverImage: string
   description: string
   content: string
@@ -26,7 +32,7 @@ export interface EventData {
 
 export const events: EventData[] = [
   {
-    slug: 'cantata-de-natal-2025',
+    slug: 'campanha-union-solidaria-2026',
     link: `https://campanhauniaosolidaria.com.br/`,
     title: 'Campanha União solidaria - 2026',
     date: '2026-02-23',
@@ -37,56 +43,76 @@ export const events: EventData[] = [
     },
     location: 'https://campanhauniaosolidaria.com.br/',
     category: 'Campanhas',
-    coverImage: '/images/events/uniao-solidaria.jpg',
+    coverImage: '/images/eventos/uniao-solidaria.jpg',
     description:
       'Apoie a ADRAP na campanha União Solidária e concorra a prêmios!',
+    content: '',
+    gallery: [],
+  },
+  {
+    slug: 'volta-aulas-ingles',
+    link: `eventos/volta-aulas-ingles`,
+    title: 'Volta as aulas de inglês 2026',
+    date: '2026-02-25',
+    dateDisplay: {
+      day: '25',
+      month: 'Fev',
+      year: '2026',
+    },
+    location: 'Sede da ADRAP',
+    category: 'Notícias',
+    coverImage:
+      '/images/eventos/volta-aulas-ingles-25022026/volta-aula-ingles.jpg',
+    description: 'Hoje tivemos a volta das aulas de inglês na ADRAP',
     content: `
 ## Sobre o Evento
 
-A **Cantata de Natal** é o evento mais esperado do ano na ADRAP. Nesta noite especial, nossos alunos do coral apresentam um repertório cuidadosamente preparado de canções natalinas que emocionam e encantam toda a comunidade.
+É com grande entusiasmo que celebramos o retorno das aulas de inglês na ADRAP. Este novo semestre marca o início de uma jornada de aprendizado e descobertas para nossos alunos, que buscam no domínio de um novo idioma ferramentas essenciais para o seu desenvolvimento pessoal e profissional.
+
+A primeira aula é um momento especial de acolhimento, onde os estudantes reencontram colegas e professores, conhecem o plano de ensino para 2026 e já começam a praticar a conversação em um ambiente dinâmico e interativo.
+
+
 
 ### O que esperar
 
-- Apresentação do coral infantil com mais de 50 crianças
-- Repertório com clássicos natalinos brasileiros e internacionais
-- Participação especial dos alunos de música instrumental
-- Momento de confraternização com as famílias
+- Nossos alunos reencontram colegas e professores
+- Conhecem o plano de ensino para 2026
+- Começam a praticar a conversação em um ambiente dinâmico e interativo
 
 ### Programação
 
 | Horário | Atividade |
 |---------|-----------|
-| 19:00 | Abertura dos portões |
-| 19:30 | Início da apresentação |
-| 21:00 | Confraternização |
+| 19:00 | Inicio das Aulas |
+| 20:00 | Fim das Aulas |
 
 ### Informações Importantes
 
-O evento é **gratuito e aberto ao público**. Traga sua família para celebrar conosco este momento especial de união e esperança.
+As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha aprender inglês com a gente!
 
-> "A música tem o poder de transformar vidas e unir corações. Na Cantata de Natal, vemos isso acontecer de forma mágica." - Coordenação ADRAP
+> "O inglês é a chave para abrir portas e oportunidades. Na ADRAP, oferecemos um ensino de qualidade e acessível para todos." - Coordenação ADRAP
     `,
     gallery: [
       {
-        src: '/images/events/cantata-natal-1.jpg',
+        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-1.jpeg',
         alt: 'Coral infantil em apresentação',
         size: 'large',
       },
       {
-        src: '/images/events/cantata-natal-2.jpg',
+        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-2.jpeg',
         alt: 'Plateia emocionada',
         size: 'medium',
       },
       {
-        src: '/images/events/cantata-natal-3.jpg',
+        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-3.jpeg',
         alt: 'Músicos em ação',
         size: 'medium',
       },
     ],
-    video: {
-      type: 'youtube',
-      id: 'dQw4w9WgXcQ',
-    },
+    // video: {
+    //   type: 'youtube',
+    //   id: 'dQw4w9WgXcQ',
+    // },
   },
 ]
 
@@ -139,6 +165,11 @@ export const eventCategories: EventCategory[] = [
     label: 'Comemoração',
     color: 'bg-rose-500 text-white',
   },
+  {
+    slug: 'noticias',
+    label: 'Notícias',
+    color: 'bg-amber-800 text-white',
+  },
 ]
 
 export function getCategoryBySlug(slug: string): EventCategory | undefined {
@@ -155,6 +186,7 @@ export function getEventsByCategory(categorySlug: string): EventData[] {
     festival: 'Festival',
     workshop: 'Workshop',
     comemoracao: 'Comemoração',
+    noticias: 'Notícias',
   }
 
   const categoryName = categoryMap[categorySlug]

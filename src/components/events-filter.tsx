@@ -27,6 +27,7 @@ export function EventsFilter({ events, categories }: EventsFilterProps) {
             workshop: 'Workshop',
             comemoracao: 'Comemoração',
             campanhas: 'Campanhas',
+            noticias: 'Notícias',
           }
           return event.category === categoryMap[activeCategory]
         })
@@ -65,6 +66,7 @@ export function EventsFilter({ events, categories }: EventsFilterProps) {
                         workshop: 'Workshop',
                         comemoracao: 'Comemoração',
                         campanhas: 'Campanhas',
+                        noticias: 'Notícias',
                       }
                       return e.category === categoryMap[category.slug]
                     }).length
@@ -119,12 +121,15 @@ export function EventsFilter({ events, categories }: EventsFilterProps) {
                         'bg-rose-500 text-white',
                       event.category === 'Campanhas' &&
                         'bg-green-600 text-white',
+                      event.category === 'Notícias' &&
+                        'bg-amber-800 text-white',
                       ![
                         'Apresentação',
                         'Festival',
                         'Workshop',
                         'Comemoração',
                         'Campanhas',
+                        'Notícias',
                       ].includes(event.category) &&
                         'bg-card/90 text-foreground backdrop-blur-sm'
                     )}

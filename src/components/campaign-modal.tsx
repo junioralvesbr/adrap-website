@@ -84,7 +84,7 @@ export default function CampaignModal() {
           {/* Foto circular */}
           <div className='relative h-56 w-56 overflow-hidden rounded-full shadow-2xl sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96'>
             <Image
-              src='/images/events/uniao-solidaria.jpg'
+              src='/images/eventos/uniao-solidaria.jpg'
               alt='Campanha União Solidária - Participe e concorra a prêmios!'
               fill
               className='object-cover'
