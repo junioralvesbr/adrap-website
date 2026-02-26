@@ -50,7 +50,7 @@ export function ProgramsPageTemplate({
             alt={title}
             fill
             sizes='(min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 768px) 768px, (min-width: 480px) 480px, 100vw'
-            className='object-cover'
+            className='object-cover object-top'
             priority
           />
           <div className='from-foreground/90 via-foreground/70 absolute inset-0 bg-linear-to-r to-transparent' />
