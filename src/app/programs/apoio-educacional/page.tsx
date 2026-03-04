@@ -15,13 +15,37 @@ const Modules = [
     ],
   },
   {
-    title: 'Aulas de Inglês',
+    title: 'Inglês',
     description:
       'Aulas de inglês para o desenvolvimento de nossas crianças no ambito pessoal e profissional.',
     image: '/images/programas/aulas-ingles.jpg',
     features: [
       'Conversação e vocabulário prático',
       'Desenvolvimento de leitura e escrita',
+      'Apoio pedagógico',
+      'Apoio psicossocial',
+    ],
+  },
+  {
+    title: 'Psicólogo',
+    description:
+      'Oferecemos suporte emocional e acompanhamento psicológico especializado para crianças e adolescentes, promovendo o bem-estar mental e o desenvolvimento saudável.',
+    image: '/images/programas/aulas-ingles.jpg',
+    features: [
+      'Acompanhamento individualizado',
+      'Apoio emocional e desenvolvimento socioemocional',
+      'Mediação de conflitos e desenvolvimento de habilidades sociais',
+      'Orientação para pais e responsáveis',
+    ],
+  },
+  {
+    title: 'Neuropsicopedagogo',
+    description:
+      'Oferecemos atendimento neuropsicopedagógico especializado para crianças e adolescentes, com foco no desenvolvimento cognitivo e aprendizagem.',
+    image: '/images/programas/breakdance-class.jpg',
+    features: [
+      'Avaliação neuropsicopedagógica',
+      'Desenvolvimento de habilidades de aprendizagem',
       'Apoio pedagógico',
       'Apoio psicossocial',
     ],

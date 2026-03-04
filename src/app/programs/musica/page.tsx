@@ -29,7 +29,7 @@ const musicModules = [
     title: 'Bateria',
     description:
       'Sinta o ritmo e aprenda bateria com foco em coordenação motora, diferentes estilos musicais e técnicas de percussão.',
-    image: '/images/programas/bateria.jpg',
+    image: '/images/programas/aula-musica.jpg',
     features: [
       'Coordenação motora',
       'Ritmos básicos e viradas',
@@ -41,7 +41,7 @@ const musicModules = [
     title: 'Musicalização Infantil',
     description:
       'Aulas práticas para crianças, desenvolvendo habilidades musicais e criatividade.',
-    image: '/images/programas/coral.jpg',
+    image: '/images/programas/musicalizacao-infantil.jpg',
     features: [
       'Técnicas de respiração',
       'Afinação e projeção vocal',

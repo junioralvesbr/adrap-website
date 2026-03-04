@@ -2,15 +2,15 @@ import { ProgramsPageTemplate } from '@/components/ProgramsPageTemplate'
 
 const artModules = [
   {
-    title: 'Pintura',
+    title: 'Desenho em Grafite',
     description:
-      'Explore o mundo das cores e técnicas de pintura em tela, desenvolvendo a criatividade e expressão artística através de diferentes estilos.',
+      'Explore o mundo das cores e técnicas de grafite, desenvolvendo a criatividade e expressão artística através de diferentes estilos.',
     image: '/images/programas/pintura.jpg',
     features: [
-      'Técnicas de pintura em tela',
+      'Técnicas de pintura em grafite',
       'Teoria das cores e composição',
       'Diferentes estilos artísticos',
-      'Criação de obras autorais',
+      'Criação de grafites autorais',
     ],
   },
   {
@@ -61,7 +61,7 @@ export default function ArtesPage() {
       modules={artModules}
       schedule={{
         days: 'Segunda a Sabado',
-        duration: 'Turmas de 1h30',
+        duration: 'Turmas de 1h',
         location: 'Sede ADRAP',
       }}
       benefits={artBenefits}
