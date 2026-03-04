@@ -56,7 +56,7 @@ export default function ArtesPage() {
       title='Aulas de Artes'
       subtitle='Programa de Artes Visuais'
       description='Desenvolva a criatividade e expressão artística através da pintura, teatro de fantoches e artesanato. Um espaço onde a imaginação não tem limites.'
-      heroImage='/images/programas/pintura.jpg'
+      heroImage='/images/programas/artesanato.jpg'
       accentColor='#dc2626'
       modules={artModules}
       schedule={{

@@ -27,7 +27,7 @@ const programs = [
     icon: Disc,
     title: 'Apoio Educacional',
     description: 'Aulas de dança e inglês para desenvolvimento pessoal.',
-    image: '/images/programas/educacao.jpg',
+    image: '/images/programas/educacao-2.jpg',
     color: 'bg-purple-600',
     href: PROGRAM_LINKS.APOIO_EDUCACIONAL,
   },
