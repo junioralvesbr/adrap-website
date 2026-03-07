@@ -29,7 +29,7 @@ const artModules = [
     title: 'Artesanato',
     description:
       'Desenvolva habilidades manuais criando peças únicas com diversos materiais, estimulando a criatividade e coordenação motora.',
-    image: '/images/programas/artesanato.jpg',
+    image: '/images/programas/artesanato-2.jpg',
     features: [
       'Trabalho com diversos materiais',
       'Reciclagem criativa',

@@ -30,7 +30,7 @@ const Modules = [
     title: 'Psicólogo',
     description:
       'Oferecemos suporte emocional e acompanhamento psicológico especializado para crianças e adolescentes, promovendo o bem-estar mental e o desenvolvimento saudável.',
-    image: '/images/programas/aulas-ingles.jpg',
+    image: '/images/programas/psicologo.jpg',
     features: [
       'Acompanhamento individualizado',
       'Apoio emocional e desenvolvimento socioemocional',

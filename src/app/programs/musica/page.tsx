@@ -29,7 +29,7 @@ const musicModules = [
     title: 'Bateria',
     description:
       'Sinta o ritmo e aprenda bateria com foco em coordenação motora, diferentes estilos musicais e técnicas de percussão.',
-    image: '/images/programas/aula-musica.jpg',
+    image: '/images/programas/bateria-1.jpg',
     features: [
       'Coordenação motora',
       'Ritmos básicos e viradas',
@@ -68,7 +68,7 @@ export default function MusicaPage() {
       title='Aulas de Música'
       subtitle='Programa Musical'
       description='Desperte o talento musical das crianças através do aprendizado de instrumentos e canto. Nossas aulas desenvolvem habilidades técnicas, criatividade e trabalho em equipe.'
-      heroImage='/images/programas/aula-musica.jpg'
+      heroImage='/images/programas/bateria-1.jpg'
       accentColor='#2563eb'
       modules={musicModules}
       schedule={{
