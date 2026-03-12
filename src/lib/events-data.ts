@@ -1,194 +1,17 @@
-export interface EventData {
-  slug: string
-  link: string
-  title: string
-  date: string
-  dateDisplay: {
-    day: string
-    month: string
-    year: string
-  }
-  location: string
-  category:
-    | 'Apresentação'
-    | 'Festival'
-    | 'Workshop'
-    | 'Comemoração'
-    | 'Campanhas'
-    | 'Notícias'
-  coverImage: string
-  description: string
-  content: string
-  gallery: {
-    src: string
-    alt: string
-    size?: 'small' | 'medium' | 'large'
-  }[]
-  video?: {
-    type: 'youtube' | 'vimeo'
-    id: string
-  }
+import { events } from '@/posts'
+import { EventData } from '@/types/eventData'
+
+export function getEventBySlug(slug: string) {
+  return events.find((event) => event.slug === slug) as EventData
 }
 
-export const events: EventData[] = [
-  {
-    slug: 'campanha-union-solidaria-2026',
-    link: `https://campanhauniaosolidaria.com.br/`,
-    title: 'Campanha União solidaria - 2026',
-    date: '2026-02-23',
-    dateDisplay: {
-      day: '23',
-      month: 'Fev',
-      year: '2026',
-    },
-    location: 'https://campanhauniaosolidaria.com.br/',
-    category: 'Campanhas',
-    coverImage: '/images/eventos/uniao-solidaria.jpg',
-    description:
-      'Apoie a ADRAP na campanha União Solidária e concorra a prêmios!',
-    content: '',
-    gallery: [],
-  },
-  {
-    slug: 'volta-aulas-ingles',
-    link: `eventos/volta-aulas-ingles`,
-    title: 'Volta as aulas de inglês 2026',
-    date: '2026-02-25',
-    dateDisplay: {
-      day: '25',
-      month: 'Fev',
-      year: '2026',
-    },
-    location: 'Sede da ADRAP',
-    category: 'Notícias',
-    coverImage:
-      '/images/eventos/volta-aulas-ingles-25022026/volta-aula-ingles.jpg',
-    description: 'Hoje tivemos a volta das aulas de inglês na ADRAP',
-    content: `
-## Sobre o Evento
-
-É com grande entusiasmo que celebramos o retorno das aulas de inglês na ADRAP. Este novo semestre marca o início de uma jornada de aprendizado e descobertas para nossos alunos, que buscam no domínio de um novo idioma ferramentas essenciais para o seu desenvolvimento pessoal e profissional.
-
-A primeira aula é um momento especial de acolhimento, onde os estudantes reencontram colegas e professores, conhecem o plano de ensino para 2026 e já começam a praticar a conversação em um ambiente dinâmico e interativo.
-
-
-
-### O que esperar
-
-- Nossos alunos reencontram colegas e professores
-- Conhecem o plano de ensino para 2026
-- Começam a praticar a conversação em um ambiente dinâmico e interativo
-
-### Programação
-
-| Horário | Atividade |
-|---------|-----------|
-| 19:00 | Inicio das Aulas |
-| 20:00 | Fim das Aulas |
-
-### Informações Importantes
-
-As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha aprender inglês com a gente!
-
-> "O inglês é a chave para abrir portas e oportunidades. Na ADRAP, oferecemos um ensino de qualidade e acessível para todos." - Coordenação ADRAP
-    `,
-    gallery: [
-      {
-        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-1.jpeg',
-        alt: 'Coral infantil em apresentação',
-        size: 'large',
-      },
-      {
-        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-2.jpeg',
-        alt: 'Plateia emocionada',
-        size: 'medium',
-      },
-      {
-        src: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-3.jpeg',
-        alt: 'Músicos em ação',
-        size: 'medium',
-      },
-    ],
-    // video: {
-    //   type: 'youtube',
-    //   id: 'dQw4w9WgXcQ',
-    // },
-  },
-  {
-    slug: 'volta-aulas-infantil',
-    link: `eventos/volta-aulas-infantil`,
-    title: 'Volta as aulas de musicalização infantil 2026',
-    date: '2026-03-03',
-    dateDisplay: {
-      day: '03',
-      month: 'Mar',
-      year: '2026',
-    },
-    location: 'Sede da ADRAP',
-    category: 'Notícias',
-    coverImage: '/images/eventos/volta-aulas-infantil-03032026/infantil-2.jpeg',
-    description:
-      'Hoje tivemos a volta das aulas de musicalização infantil na ADRAP',
-    content: `
-## Sobre o Evento
-
-É com grande entusiasmo que celebramos o retorno das aulas de musicalização infantil na ADRAP. Este novo semestre marca o início de uma jornada de aprendizado e descobertas para nossos alunos
-
-A primeira aula é um momento especial de acolhimento, onde os estudantes reencontram colegas e professores, conhecem o plano de ensino para 2026 e já começam a praticar a musicalização em um ambiente interativo.
-
-### O que esperar
-
-- Nossos alunos reencontram colegas e professores
-- Conhecem o plano de ensino para 2026
-
-### Programação
-
-| Horário | Atividade |
-|---------|-----------|
-| 10:00 - 11:00 | Musicalização infantil |
-| 14:00 - 15:00 | Musicalização infantil |
-
-### Informações Importantes
-
-As aulas são gratuitas e abertas ao público. Faça sua matrícula!
-
-> "A musicalização infantil é a chave para o desenvolvimento cognitivo, social e emocional das crianças. Na ADRAP, oferecemos um ensino de qualidade e acessível para todos." - Coordenação ADRAP
-    `,
-    gallery: [
-      {
-        src: '/images/eventos/volta-aulas-infantil-03032026/infantil-1.jpeg',
-        alt: 'Musicalização infantil',
-        size: 'large',
-      },
-      {
-        src: '/images/eventos/volta-aulas-infantil-03032026/infantil-2.jpeg',
-        alt: 'Musicalização infantil',
-        size: 'medium',
-      },
-      {
-        src: '/images/eventos/volta-aulas-infantil-03032026/infantil-3.jpeg',
-        alt: 'Musicalização infantil',
-        size: 'medium',
-      },
-    ],
-    // video: {
-    //   type: 'youtube',
-    //   id: 'dQw4w9WgXcQ',
-    // },
-  },
-]
-
-export function getEventBySlug(slug: string): EventData | undefined {
-  return events.find((event) => event.slug === slug)
-}
-
-export function getAllEvents(): EventData[] {
+export function getAllEvents() {
   return events.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  )
+  ) as EventData[]
 }
 
-export function getUpcomingEvents(limit?: number): EventData[] {
+export function getUpcomingEvents(limit?: number) {
   const now = new Date()
   const upcoming = events
     .filter((event) => new Date(event.date) >= now)
@@ -197,7 +20,7 @@ export function getUpcomingEvents(limit?: number): EventData[] {
   return limit ? upcoming.slice(0, limit) : upcoming
 }
 
-export function getPastEvents(limit?: number): EventData[] {
+export function getPastEvents(limit?: number) {
   const now = new Date()
   const past = events
     .filter((event) => new Date(event.date) < now)

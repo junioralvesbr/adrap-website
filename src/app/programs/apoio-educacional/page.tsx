@@ -42,7 +42,7 @@ const Modules = [
     title: 'Neuropsicopedagogo',
     description:
       'Oferecemos atendimento neuropsicopedagógico especializado para crianças e adolescentes, com foco no desenvolvimento cognitivo e aprendizagem.',
-    image: '/images/programas/breakdance-class.jpg',
+    image: '/images/programas/neuropsicopedagogo.jpg',
     features: [
       'Avaliação neuropsicopedagógica',
       'Desenvolvimento de habilidades de aprendizagem',
