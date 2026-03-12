@@ -19,7 +19,7 @@ function AnimatedCounter({
       (entries) => {
         if (entries[0].isIntersecting && !hasAnimated) {
           setHasAnimated(true)
-          const duration = 2000
+          const duration = 1000
           const steps = 60
           const increment = target / steps
           let current = 0
