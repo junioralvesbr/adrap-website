@@ -10,7 +10,7 @@ export const atendimentoNeuropsicopedagogo = {
   },
   location: 'Sede da ADRAP',
   category: 'Notícias',
-  coverImage: '/images/eventos/neuropsicopedagogo-2026/foto4.jpg',
+  coverImage: '/images/eventos/neuropsicopedagogo-2026/foto2.jpg',
   description: 'Hoje tivemos o atendimento neuropsicopedagogo na ADRAP',
   content: `
 ## Sobre o Evento
