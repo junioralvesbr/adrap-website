@@ -45,7 +45,7 @@ export function EventsFilter({ events, categories }: EventsFilterProps) {
               onClick={() => setActiveCategory(category.slug)}
               className={cn(
                 'rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300',
-                'border-2 hover:scale-105 active:scale-95',
+                'cursor-pointer border-2 hover:scale-105 active:scale-95',
                 isActive
                   ? `${category.color} border-transparent shadow-lg`
                   : 'border-border text-muted-foreground hover:border-primary hover:text-primary bg-transparent'
