@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface GalleryImage {
   src: string
@@ -23,15 +23,25 @@ export function MasonryGallery({
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  useEffect(() => {
+    if (lightboxOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [lightboxOpen])
+
   const openLightbox = (index: number) => {
     setCurrentIndex(index)
     setLightboxOpen(true)
-    document.body.style.overflow = 'hidden'
   }
 
   const closeLightbox = () => {
     setLightboxOpen(false)
-    document.body.style.overflow = ''
   }
 
   const goToPrevious = () => {
