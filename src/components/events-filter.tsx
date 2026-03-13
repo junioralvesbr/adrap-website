@@ -2,8 +2,9 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import type { EventCategory, EventData } from '@/lib/events-data'
 import { cn } from '@/lib/utils'
+import type { EventCategory } from '@/types/eventCategory'
+import type { EventData } from '@/types/eventData'
 import { ArrowRight, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

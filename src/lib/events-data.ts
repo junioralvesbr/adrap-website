@@ -1,4 +1,5 @@
 import { events } from '@/posts'
+import { EventCategory } from '@/types/eventCategory'
 import { EventData } from '@/types/eventData'
 
 export function getEventBySlug(slug: string) {
@@ -30,12 +31,6 @@ export function getPastEvents(limit?: number) {
 }
 
 // Sistema de categorias/tags para filtros
-export interface EventCategory {
-  slug: string
-  label: string
-  color: string
-}
-
 export const eventCategories: EventCategory[] = [
   { slug: 'todos', label: 'Todos', color: 'bg-foreground text-background' },
   {
