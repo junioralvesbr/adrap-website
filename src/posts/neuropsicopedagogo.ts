@@ -17,7 +17,7 @@ export const atendimentoNeuropsicopedagogo = {
 
 É com grande alegria que anunciamos o retorno dos atendimentos neuropsicopedagógicos na ADRAP. Este novo ciclo reafirma o nosso compromisso com o desenvolvimento integral de cada aluno, oferecendo acompanhamento especializado que respeita o ritmo e as particularidades de aprendizagem de cada um, promovendo autonomia, autoconfiança e novas conquistas.
 
-É com muita alegria que retomamos os atendimentos neuropsicopedagógicos na ADRAP. Com acompanhamento especializado e acolhedor, seguimos dedicados a potencializar o desenvolvimento e a aprendizagem de cada aluno, respeitando suas individualidades e celebrando cada conquista.
+Seguimos dedicados a potencializar o desenvolvimento e a aprendizagem de cada aluno, respeitando suas individualidades e celebrando cada conquista.
 
 ### O que esperar
 
