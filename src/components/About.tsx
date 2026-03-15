@@ -3,6 +3,7 @@ import { NAVIGATION_LINKS } from '@/config/links'
 import { ArrowRight, Check } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { VideoEmbed } from './video-embed'
 
 const features = [
   'Aulas de música: violão, teclado, Bateria e musicalização infantil',
@@ -74,6 +75,20 @@ export default function About() {
               </Link>
             </Button>
           </div>
+        </div>
+      </div>
+
+      {/* Video Section */}
+      <div className='container mx-auto px-4'>
+        <div className='mx-auto mt-10 max-w-4xl'>
+          <span className='text-secondary-foreground mb-6 text-2xl font-bold'>
+            Venha ser ADRAP !!
+          </span>
+          <VideoEmbed
+            type='youtube'
+            id='atYSBSIWDwM'
+            title='Venha ser Adrap !!'
+          />
         </div>
       </div>
     </section>

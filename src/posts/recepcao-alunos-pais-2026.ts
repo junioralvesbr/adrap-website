@@ -55,8 +55,8 @@ A ADRAP promoveu um café da tarde para os pais e alunos, com direito a música 
       size: 'medium',
     },
   ],
-  video: {
-    type: 'youtube',
-    id: 'hHiBn6caBzA',
-  },
+  // video: {
+  //   type: 'youtube',
+  //   id: 'hHiBn6caBzA',
+  // },
 }
