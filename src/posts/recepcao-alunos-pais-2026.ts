@@ -15,14 +15,14 @@ export const recepcaoAlunosPais2026 = {
   content: `
 ## Sobre o Evento
 
-A ADRAP recebeu os pais e alunos para a  primeira aula do ano letivo de 2026. Foi um momento de muita alegria e integração entre pais, alunos e professores.
+A ADRAP recebeu os pais e alunos para a primeira aula do ano letivo de 2026. Foi um momento de muita alegria e integração entre pais, alunos e professores.
 
-Foi umq oportunidade dos pais conhecerem melhor a escola e os professores, além de tirarem suas dúvidas sobre o ano letivo.
+Os pais tiveram a oportunidade de conhecer melhor a escola e os professores, além de tirarem suas dúvidas sobre o ano letivo.
 
 ### O que esperar
 
 - Integração entre pais, alunos e professores
-- Conhecem o plano de ensino para 2026
+- Conhecer o plano de ensino e eventos para 2026
 - Momento de descontração e confraternização
 
 ### Programação
@@ -34,10 +34,9 @@ Foi umq oportunidade dos pais conhecerem melhor a escola e os professores, além
 
 ### Informações Importantes
 
-A ADRAP promoveu um café da tarde para os pais e alunos, com direito a música ao vivo e brincadeiras para as crianças.
+A ADRAP promoveu um café da tarde para os alunos, com direito a música ao vivo e brincadeiras para as crianças junto com os pais.
 
-> "Agradecemos a presença de todos. Foi um momento de muita alegria e integração entre pais, alunos e professores." - Coordenação ADRAP
-    `,
+> "Agradecemos a presença de todos. Foi um momento de muita alegria e integração. É muito importante essa união entre pais, alunos e professores." - Coordenação ADRAP`,
   gallery: [
     {
       src: '/images/eventos/recpcao-alunos-pais-20126/bemvindo.jpeg',

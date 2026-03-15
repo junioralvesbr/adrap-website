@@ -20,8 +20,6 @@ export const voltaAulasIngles2026 = {
 
 A primeira aula é um momento especial de acolhimento, onde os estudantes reencontram colegas e professores, conhecem o plano de ensino para 2026 e já começam a praticar a conversação em um ambiente dinâmico e interativo.
 
-
-
 ### O que esperar
 
 - Nossos alunos reencontram colegas e professores
