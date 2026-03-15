@@ -50,7 +50,7 @@ Os atendimentos são gratuitos e voltados para crianças e adolescentes com difi
       size: 'medium',
     },
     {
-      src: '/images/eventos/neuropsicopedagogo-2026/foto-4.jpg',
+      src: '/images/eventos/neuropsicopedagogo-2026/foto4.jpg',
       alt: 'Músicos em ação',
       size: 'medium',
     },

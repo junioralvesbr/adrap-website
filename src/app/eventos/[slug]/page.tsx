@@ -96,7 +96,7 @@ export default async function EventPage({ params }: EventPageProps) {
             </span>
           </div>
 
-          <h1 className='text-background mb-4 text-4xl font-bold text-balance md:text-5xl lg:text-6xl'>
+          <h1 className='text-background mb-4 text-3xl font-bold text-balance sm:text-4xl md:text-5xl lg:text-6xl'>
             {event.title}
           </h1>
 
