@@ -5,7 +5,7 @@ const artModules = [
     title: 'Desenho em Grafite',
     description:
       'Explore o mundo das cores e técnicas de grafite, desenvolvendo a criatividade e expressão artística através de diferentes estilos.',
-    image: '/images/programas/pintura.jpg',
+    image: '/images/programas/grafite.jpg',
     features: [
       'Técnicas de pintura em grafite',
       'Teoria das cores e composição',
@@ -17,7 +17,7 @@ const artModules = [
     title: 'Desenho Cartoon',
     description:
       'Aprenda a criar e desenhar personagens de desenho cartoon, desenvolvendo habilidades de expressão, criatividade e contação de histórias.',
-    image: '/images/programas/fantoche.jpg',
+    image: '/images/programas/cartoon.jpg',
     features: [
       'Desenho de personagens',
       'Técnicas de desenho',

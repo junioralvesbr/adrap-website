@@ -71,6 +71,15 @@ export default function Partners() {
                 className='object-contain'
               />
             </div>
+
+            <div className='relative h-34 w-34'>
+              <Image
+                src='/images/parceiros/furia-internet.jpg'
+                alt='Logo furia internet'
+                fill
+                className='object-contain'
+              />
+            </div>
           </div>
         </div>
       </div>
