@@ -30,7 +30,7 @@ export default function LeiRouanet() {
             {/* Lei de Incentivo à Cultura - Always first per manual guidelines */}
             <div className='relative h-28 w-48'>
               <Image
-                src='/images/rouanet/incentivo-cultura.png'
+                src='/images/rouanet/lei-rouanet.png'
                 alt='Lei de Incentivo à Cultura - Lei Rouanet'
                 fill
                 className='object-contain'
