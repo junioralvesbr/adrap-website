@@ -38,8 +38,11 @@ export const eventCategories: EventCategory[] = [
     label: 'Campanhas',
     color: 'bg-green-600 text-white',
   },
-  { slug: 'festival', label: 'Festival', color: 'bg-amber-500 text-white' },
-  { slug: 'workshop', label: 'Workshop', color: 'bg-purple-600 text-white' },
+  {
+    slug: 'apresentacao',
+    label: 'Apresentação',
+    color: 'bg-amber-500 text-white',
+  },
   {
     slug: 'comemoracao',
     label: 'Comemoração',
@@ -62,9 +65,8 @@ export function getEventsByCategory(categorySlug: string): EventData[] {
   }
 
   const categoryMap: Record<string, string> = {
+    campanhas: 'Campanhas',
     apresentacao: 'Apresentação',
-    festival: 'Festival',
-    workshop: 'Workshop',
     comemoracao: 'Comemoração',
     noticias: 'Notícias',
   }
