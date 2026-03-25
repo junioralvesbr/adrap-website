@@ -10,8 +10,7 @@ export const voltaAulasIngles2026 = {
   },
   location: 'Sede da ADRAP',
   category: 'Notícias',
-  coverImage:
-    '/images/eventos/volta-aulas-ingles-25022026/volta-aula-ingles.jpg',
+  coverImage: '/images/eventos/volta-aulas-ingles-25022026/aula-ingles-3.jpeg',
   description: 'Hoje tivemos a volta das aulas de inglês na ADRAP',
   content: `
 ## Sobre o Evento
