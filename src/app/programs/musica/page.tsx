@@ -68,7 +68,7 @@ export default function MusicaPage() {
       title='Aulas de Música'
       subtitle='Programa Musical'
       description='Desperte o talento musical das crianças através do aprendizado de instrumentos e canto. Nossas aulas desenvolvem habilidades técnicas, criatividade e trabalho em equipe.'
-      heroImage='/images/programas/bateria-2.jpg'
+      heroImage='/images/programas/violao-1.jpeg'
       accentColor='#2563eb'
       modules={musicModules}
       schedule={{
