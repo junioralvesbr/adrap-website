@@ -14,7 +14,7 @@ export const NAVIGATION_LINKS = {
   IMPACTO: '/#impacto',
   VOLUNTARIOS: '/voluntarios',
   PARCEIROS: '/#parceiros',
-  EVENTOS: '/#eventos',
+  EVENTOS: '/eventos',
   CONTATO: '/#contato',
 } as const
 
