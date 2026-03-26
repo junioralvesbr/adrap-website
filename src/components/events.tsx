@@ -38,6 +38,7 @@ export function Events() {
                       alt={event.title}
                       fill
                       className='object-cover transition-transform duration-700 group-hover:scale-110'
+                      sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
                     />
                     <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
 

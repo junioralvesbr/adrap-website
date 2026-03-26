@@ -1,5 +1,36 @@
 import Image from 'next/image'
 
+const Logos = [
+  {
+    src: '/images/parceiros/cooper.jpg',
+    alt: 'Logo Cooper',
+  },
+  {
+    src: '/images/parceiros/cawahisa.jpg',
+    alt: 'Logo Cawahisa',
+  },
+  {
+    src: '/images/parceiros/olhos.jpg',
+    alt: 'Logo clinica de olhos',
+  },
+  {
+    src: '/images/parceiros/itaipu.png',
+    alt: 'Logo Itaipu',
+  },
+  {
+    src: '/images/parceiros/criarkits.png',
+    alt: 'Logo Criarkits',
+  },
+  {
+    src: '/images/parceiros/cnbb.png',
+    alt: 'Logo Cnbb',
+  },
+  {
+    src: '/images/parceiros/furia-internet.jpg',
+    alt: 'Logo furia internet',
+  },
+]
+
 export default function Partners() {
   return (
     <section id='parceiros' className='bg-muted/90 py-16'>
@@ -18,68 +49,17 @@ export default function Partners() {
 
         <div className='rounded-2xl bg-white p-8 shadow-xl md:p-12'>
           <div className='flex flex-wrap items-center justify-around gap-8 md:gap-12 lg:gap-16'>
-            <div className='relative h-28 w-28'>
-              <Image
-                src='/images/parceiros/cooper.jpg'
-                alt='Logo Cooper'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-28 w-28'>
-              <Image
-                src='/images/parceiros/cawahisa.jpg'
-                alt='Logo Cawahisa'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-36 w-36'>
-              <Image
-                src='/images/parceiros/olhos.jpg'
-                alt='Logo clinica de olhos'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-28 w-28'>
-              <Image
-                src='/images/parceiros/itaipu.png'
-                alt='Logo Itaipu'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-28 w-28'>
-              <Image
-                src='/images/parceiros/criarkits.png'
-                alt='Logo Criarkits'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-34 w-34'>
-              <Image
-                src='/images/parceiros/cnbb.png'
-                alt='Logo Cnbb'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            <div className='relative h-34 w-34'>
-              <Image
-                src='/images/parceiros/furia-internet.jpg'
-                alt='Logo furia internet'
-                fill
-                className='object-contain'
-              />
-            </div>
+            {Logos.map((logo, index) => (
+              <div key={index} className='relative h-28 w-28'>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  fill
+                  className='object-contain'
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function About() {
                 alt='Crianças em aula de música'
                 fill
                 className='object-cover object-top'
-                sizes='100vw'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
             <div className='bg-primary text-primary-foreground absolute -right-8 -bottom-8 hidden rounded-2xl p-8 shadow-xl md:block'>

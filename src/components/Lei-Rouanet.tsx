@@ -34,6 +34,7 @@ export default function LeiRouanet() {
                 alt='Lei de Incentivo à Cultura - Lei Rouanet'
                 fill
                 className='object-contain'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
 
               <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
@@ -51,6 +52,7 @@ export default function LeiRouanet() {
                 alt='CPA'
                 fill
                 className='object-contain'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
 
               <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
@@ -65,6 +67,7 @@ export default function LeiRouanet() {
                 alt='Usacucar usina santa terezinha'
                 fill
                 className='object-contain'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
             </div>
 
@@ -78,6 +81,7 @@ export default function LeiRouanet() {
                 alt='Ministério da Cultura - Governo do Brasil'
                 fill
                 className='object-contain'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
               />
               <p className='text-muted-foreground text-center text-sm font-bold tracking-wider uppercase md:text-left'>
                 Realização

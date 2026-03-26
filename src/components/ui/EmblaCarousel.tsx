@@ -48,7 +48,7 @@ export default function EmblaCarousel({
                     alt={slide.name}
                     fill
                     className='object-cover object-top transition-transform duration-500 group-hover:scale-110'
-                    sizes='100vw'
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
                   />
                   <div className='from-foreground/80 absolute inset-0 bg-linear-to-t via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
                 </div>

@@ -164,6 +164,7 @@ export function ProgramsPageTemplate({
                       alt={module.title}
                       fill
                       className='object-cover transition-transform duration-500 group-hover:scale-105'
+                      sizes='(min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 768px) 768px, (min-width: 480px) 480px, 100vw'
                     />
                     <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
                     <h3 className='absolute bottom-4 left-6 text-2xl font-bold text-white'>
