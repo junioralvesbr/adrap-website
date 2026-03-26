@@ -15,7 +15,7 @@ export const aulasArtesanato20260325 = {
   content: `
 ## Sobre o Evento
 
-Toda a semana temos as aulas de artesanato com a professora Inês que surpriende os alunos com novas técnicas e projetos, é um trabalho lindo que ela desenvolve com muito carinho para os nossos alunos. Os alunos ficam encantados com o resultado final.
+Toda a semana temos as aulas de artesanato com a professora Inês que surpreende os alunos com novas técnicas e projetos, é um trabalho lindo que ela desenvolve com muito carinho para os nossos alunos. Os alunos ficam encantados com o resultado final.
 
 A criatividade e as técnicas são aprimoradas a cada aula, e os alunos aprendem a criar peças únicas e personalizadas.
 
