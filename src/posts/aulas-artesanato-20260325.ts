@@ -42,7 +42,7 @@ As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha apre
     `,
   gallery: [
     {
-      src: '/images/eventos/aulas-artesanato-20260325/artesanato-1.jpg',
+      src: '/images/eventos/aulas-artesanato-20260325/artesanato-4.jpg',
       alt: 'Alunos aprendendo a fazer artesanato',
       size: 'large',
     },
@@ -57,12 +57,12 @@ As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha apre
       size: 'medium',
     },
     {
-      src: '/images/eventos/aulas-artesanato-20260325/artesanato-4.jpg',
+      src: '/images/eventos/aulas-artesanato-20260325/artesanato-5.jpg',
       alt: 'Alunos aprendendo a fazer artesanato',
       size: 'medium',
     },
     {
-      src: '/images/eventos/aulas-artesanato-20260325/artesanato-5.jpg',
+      src: '/images/eventos/aulas-artesanato-20260325/artesanato-6.jpg',
       alt: 'Alunos aprendendo a fazer artesanato',
       size: 'medium',
     },
