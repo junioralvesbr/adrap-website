@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { VideoEmbed } from '@/components/video-embed'
 import { getAllEvents, getEventBySlug } from '@/lib/events-data'
 import { MarkdownRenderer } from '@/lib/markdown'
-import { ArrowLeft, CalendarDays, MapPin, Share2 } from 'lucide-react'
+import { ArrowLeft, CalendarDays, MapPin } from 'lucide-react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -182,7 +182,7 @@ export default async function EventPage({ params }: EventPageProps) {
                 </div>
 
                 {/* Share Card */}
-                <div className='bg-card rounded-2xl p-6 shadow-lg'>
+                {/* <div className='bg-card rounded-2xl p-6 shadow-lg'>
                   <h3 className='text-foreground mb-4 text-lg font-bold'>
                     Compartilhar
                   </h3>
@@ -196,7 +196,7 @@ export default async function EventPage({ params }: EventPageProps) {
                     <Share2 className='mr-2 h-4 w-4' />
                     Compartilhar evento
                   </Button>
-                </div>
+                </div> */}
 
                 {/* CTA Card */}
                 <div className='bg-primary rounded-2xl p-6 shadow-lg'>
