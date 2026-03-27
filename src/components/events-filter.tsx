@@ -87,82 +87,84 @@ export function EventsFilter({ events, categories }: EventsFilterProps) {
               key={event.slug}
               className='bg-card group overflow-hidden border-0 shadow-lg transition-all duration-500 hover:shadow-2xl'
             >
-              <CardContent className='p-0'>
-                {/* Cover Image */}
-                <div className='relative aspect-video overflow-hidden'>
-                  <Image
-                    src={event.coverImage || '/placeholder.svg'}
-                    alt={event.title}
-                    fill
-                    className='object-cover transition-transform duration-700 group-hover:scale-110'
-                  />
-                  <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
+              <Link href={event.link}>
+                <CardContent className='p-0'>
+                  {/* Cover Image */}
+                  <div className='relative aspect-video overflow-hidden'>
+                    <Image
+                      src={event.coverImage || '/placeholder.svg'}
+                      alt={event.title}
+                      fill
+                      className='object-cover transition-transform duration-700 group-hover:scale-110'
+                    />
+                    <div className='from-foreground/60 absolute inset-0 bg-linear-to-t to-transparent' />
 
-                  {/* Date Badge */}
-                  <div className='bg-primary text-primary-foreground absolute top-4 left-4 rounded-lg px-4 py-2'>
-                    <div className='text-2xl leading-none font-bold'>
-                      {event.dateDisplay.day}
+                    {/* Date Badge */}
+                    <div className='bg-primary text-primary-foreground absolute top-4 left-4 rounded-lg px-4 py-2'>
+                      <div className='text-2xl leading-none font-bold'>
+                        {event.dateDisplay.day}
+                      </div>
+                      <div className='text-xs tracking-wider uppercase'>
+                        {event.dateDisplay.month}
+                      </div>
                     </div>
-                    <div className='text-xs tracking-wider uppercase'>
-                      {event.dateDisplay.month}
+
+                    {/* Category Badge */}
+                    <div
+                      className={cn(
+                        'absolute top-4 right-4 rounded-full px-3 py-1 text-sm font-medium',
+                        event.category === 'Apresentação' &&
+                          'bg-blue-600 text-white',
+                        event.category === 'Festival' &&
+                          'bg-amber-500 text-white',
+                        event.category === 'Workshop' &&
+                          'bg-purple-600 text-white',
+                        event.category === 'Comemoração' &&
+                          'bg-rose-500 text-white',
+                        event.category === 'Campanhas' &&
+                          'bg-green-600 text-white',
+                        event.category === 'Notícias' &&
+                          'bg-amber-800 text-white',
+                        ![
+                          'Apresentação',
+                          'Festival',
+                          'Workshop',
+                          'Comemoração',
+                          'Campanhas',
+                          'Notícias',
+                        ].includes(event.category) &&
+                          'bg-card/90 text-foreground backdrop-blur-sm'
+                      )}
+                    >
+                      {event.category}
                     </div>
                   </div>
 
-                  {/* Category Badge */}
-                  <div
-                    className={cn(
-                      'absolute top-4 right-4 rounded-full px-3 py-1 text-sm font-medium',
-                      event.category === 'Apresentação' &&
-                        'bg-blue-600 text-white',
-                      event.category === 'Festival' &&
-                        'bg-amber-500 text-white',
-                      event.category === 'Workshop' &&
-                        'bg-purple-600 text-white',
-                      event.category === 'Comemoração' &&
-                        'bg-rose-500 text-white',
-                      event.category === 'Campanhas' &&
-                        'bg-green-600 text-white',
-                      event.category === 'Notícias' &&
-                        'bg-amber-800 text-white',
-                      ![
-                        'Apresentação',
-                        'Festival',
-                        'Workshop',
-                        'Comemoração',
-                        'Campanhas',
-                        'Notícias',
-                      ].includes(event.category) &&
-                        'bg-card/90 text-foreground backdrop-blur-sm'
-                    )}
-                  >
-                    {event.category}
+                  {/* Content */}
+                  <div className='p-6'>
+                    <h2 className='text-foreground group-hover:text-primary mb-3 text-xl font-bold transition-colors'>
+                      {event.title}
+                    </h2>
+                    <p className='text-muted-foreground mb-4 line-clamp-2'>
+                      {event.description}
+                    </p>
+                    <div className='text-muted-foreground mb-4 flex items-center gap-2 text-sm'>
+                      <MapPin className='text-primary h-4 w-4' />
+                      <span>{event.location}</span>
+                    </div>
+                    <Button
+                      asChild
+                      variant='outline'
+                      className='w-full rounded-full bg-transparent'
+                    >
+                      <div>
+                        Ver detalhes
+                        <ArrowRight className='ml-2 h-4 w-4' />
+                      </div>
+                    </Button>
                   </div>
-                </div>
-
-                {/* Content */}
-                <div className='p-6'>
-                  <h2 className='text-foreground group-hover:text-primary mb-3 text-xl font-bold transition-colors'>
-                    {event.title}
-                  </h2>
-                  <p className='text-muted-foreground mb-4 line-clamp-2'>
-                    {event.description}
-                  </p>
-                  <div className='text-muted-foreground mb-4 flex items-center gap-2 text-sm'>
-                    <MapPin className='text-primary h-4 w-4' />
-                    <span>{event.location}</span>
-                  </div>
-                  <Button
-                    asChild
-                    variant='outline'
-                    className='w-full rounded-full bg-transparent'
-                  >
-                    <Link href={event.link} target='_blank'>
-                      Ver detalhes
-                      <ArrowRight className='ml-2 h-4 w-4' />
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
+                </CardContent>
+              </Link>
             </Card>
           ))
         ) : (
