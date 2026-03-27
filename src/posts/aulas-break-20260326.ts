@@ -33,8 +33,7 @@ A dança é uma forma de expressão corporal que permite aos alunos desenvolver 
 
 | Horário | Atividade |
 |---------|-----------|
-| 14:00 | Sábados |
-| 17:00 | Sábados |
+| 09:00 - 10:00 | Sábados |
 
 ### Informações Importantes
 
@@ -79,8 +78,8 @@ As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha apre
       size: 'medium',
     },
   ],
-  // video: {
-  //   type: 'youtube',
-  //   id: 'dQw4w9WgXcQ',
-  // },
+  video: {
+    type: 'youtube',
+    id: 'tosg5ynFsfE',
+  },
 }
