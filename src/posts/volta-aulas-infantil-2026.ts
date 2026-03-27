@@ -25,13 +25,6 @@ A primeira aula é um momento especial de acolhimento, onde os estudantes reenco
 - Nossos alunos reencontram colegas e professores
 - Conhecem o plano de ensino para 2026
 
-### Programação
-
-| Horário | Atividade |
-|---------|-----------|
-| 10:00 - 11:00 | Musicalização infantil |
-| 14:00 - 15:00 | Musicalização infantil |
-
 ### Informações Importantes
 
 As aulas são gratuitas e abertas ao público. Faça sua matrícula!
@@ -55,8 +48,8 @@ As aulas são gratuitas e abertas ao público. Faça sua matrícula!
       size: 'medium',
     },
   ],
-  // video: {
-  //   type: 'youtube',
-  //   id: 'dQw4w9WgXcQ',
-  // },
+  video: {
+    type: 'youtube',
+    id: 'F93OEi_U39I',
+  },
 }

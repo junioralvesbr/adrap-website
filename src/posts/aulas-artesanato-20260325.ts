@@ -29,10 +29,9 @@ A criatividade e as técnicas são aprimoradas a cada aula, e os alunos aprendem
 
 ### Programação
 
-| Horário | Atividade |
+| Data | Atividade |
 |---------|-----------|
-| 14:00 | Sábados |
-| 17:00 | Sábados |
+| Sexta Feiras |
 
 ### Informações Importantes
 
@@ -67,8 +66,8 @@ As aulas são gratuitas e abertas ao público. Faça sua matrícula e venha apre
       size: 'medium',
     },
   ],
-  // video: {
-  //   type: 'youtube',
-  //   id: 'dQw4w9WgXcQ',
-  // },
+  video: {
+    type: 'youtube',
+    id: '1j2XtlyFfKI',
+  },
 }
