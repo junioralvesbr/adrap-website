@@ -18,7 +18,7 @@ export default function About() {
       <div className='container mx-auto px-4'>
         <div className='grid items-center gap-16 lg:grid-cols-2'>
           <div className='relative'>
-            <div className='relative h-[500px] w-full overflow-hidden rounded-3xl shadow-2xl'>
+            <div className='relative h-125 w-full overflow-hidden rounded-3xl shadow-2xl'>
               <Image
                 src='/images/sobre.jpg'
                 alt='Crianças em aula de música'

@@ -77,6 +77,7 @@ export default function MusicaPage() {
         location: 'Sede ADRAP',
       }}
       benefits={musicBenefits}
+      videos={['tosg5ynFsfE']}
     />
   )
 }

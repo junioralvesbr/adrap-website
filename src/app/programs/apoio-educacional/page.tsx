@@ -79,6 +79,7 @@ export default function ApoioEducacionalPage() {
         location: 'Sede ADRAP',
       }}
       benefits={danceBenefits}
+      videos={['rMLkgr_q6EM', 'Osf6Qc5Jqlw']}
     />
   )
 }

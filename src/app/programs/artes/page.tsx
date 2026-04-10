@@ -65,6 +65,7 @@ export default function ArtesPage() {
         location: 'Sede ADRAP',
       }}
       benefits={artBenefits}
+      videos={['47pX_jMvNF4']}
     />
   )
 }

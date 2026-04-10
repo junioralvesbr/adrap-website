@@ -6,6 +6,7 @@ import { CONTACT_LINKS } from '@/config/links'
 import { Calendar, CheckCircle2, MapPin, Users } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { VideoEmbed } from './video-embed'
 
 interface CourseModule {
   title: string
@@ -28,6 +29,7 @@ interface CoursePageTemplateProps {
     location: string
   }
   benefits: string[]
+  videos: string[]
 }
 
 export function ProgramsPageTemplate({
@@ -39,6 +41,7 @@ export function ProgramsPageTemplate({
   modules,
   schedule,
   benefits,
+  videos,
 }: CoursePageTemplateProps) {
   return (
     <div className='bg-background min-h-screen'>
@@ -194,6 +197,21 @@ export function ProgramsPageTemplate({
             </div>
           </div>
         </section>
+
+        {/* Video Section */}
+        <div className='mx-auto flex max-w-7xl flex-wrap gap-4 px-4 pb-4 md:flex-nowrap md:gap-8'>
+          {videos.map((video, index) => (
+            <div className='container mx-auto' key={index}>
+              <div className='mx-auto mt-10 max-w-4xl'>
+                <VideoEmbed
+                  type='youtube'
+                  id={video}
+                  title='Venha ser Adrap !!'
+                />
+              </div>
+            </div>
+          ))}
+        </div>
 
         {/* Benefits Section */}
         <section className='bg-muted/50 py-20 md:py-28'>
