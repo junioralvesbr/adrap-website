@@ -1,5 +1,6 @@
 import { aulasArtesanato20260325 } from './aulas-artesanato-20260325'
 import { aulasBreak20260326 } from './aulas-break-20260326'
+import { culinaria2026 } from './culinaria-20260411'
 import { atendimentoNeuropsicopedagogo } from './neuropsicopedagogo'
 import { pascoa2026 } from './pascoa-2026'
 import { recepcaoAlunosPais2026 } from './recepcao-alunos-pais-2026'
@@ -16,4 +17,5 @@ export const events = [
   atendimentoNeuropsicopedagogo,
   recepcaoAlunosPais2026,
   pascoa2026,
+  culinaria2026,
 ]
